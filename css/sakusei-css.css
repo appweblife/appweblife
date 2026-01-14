@@ -1,0 +1,485 @@
+
+
+h1 {
+    color: rgb(154, 56, 237);
+    text-align: center;
+    font-size: 304%;
+}
+
+H2 {
+    color: #5a20b8;
+    height: 55px;
+    background-color: #ede35a;
+    border-bottom: 5px solid #e69831;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1%;
+    line-height: 250%
+}
+
+H3 {
+    color: #5a20b8;
+    background-color: #f1e75c;
+    margin-right: 3%;
+    border-bottom: 5px solid #6ce25d;
+    text-align: center;
+    argin-top: 3%;
+    font-size: 22px;
+}
+
+#dk {
+    background-color: lightseagreen;
+    border: 6px double white;
+    padding: 5px;
+}
+
+.sh {
+    color: white;
+    font-weight: bold;
+}
+
+/*更新日時*/
+.cch {
+    text-align: right;
+    font-weight: bold;
+    font-size: 112%;
+    color:  #5a20b8;
+}
+
+.tpg {
+    position: relative;
+    top: 15px;
+}
+
+.stme-koushin {
+    width: 90%;
+    font-weight: bold;
+    border: 5px dotted #b678e6;
+}
+
+/*単語用*/
+.sample {
+    font-size: 18px;
+    padding-left: 0.2%;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(24, 171, 47);
+    border-left: 4px solid #3ee773;
+}
+
+/*主に単語表記、display:inline-block使用　舌に余白空けてる*/
+.sample2 {
+    font-size: 18px;
+    padding-left: 0.2%;
+    padding-bottom: 0.4%;
+    margin: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(24, 171, 47);
+    border-left: 4px solid #3ee773;
+}
+/*単語用2余白せまめ*/
+.sample3 {
+    font-size: 18px;
+    padding-left: 0.2%;
+    margin-top: 10px;
+    -bottom: -10px 
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(24, 171, 47);
+    border-left: 4px solid #3ee773;
+}
+
+/*参考リンク用*/
+.orj {
+    border-left: 4px solid #e9bb17;
+    padding-left: 0.2%;
+    color: rgb(209, 137, 14);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/*ちょっとしたタイトル下線グリーン*/
+.dai {
+    background: linear-gradient(transparent 80%, #3ee773 70%);
+    width: 95%;
+    font-size: 21px;
+    min-width: 280px;
+    padding-left: 0.3%;
+    padding-bottom: 0.4%;
+    display: block;
+    color: #17992c;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3ee773;
+}
+
+/*余白おおきめ短い*/
+.dai2 {
+    background: linear-gradient(transparent 70%, #3ee773 70%);
+    padding-left: 0.3%;
+    width: 90%;
+    min-width: 280px;
+    display: block;
+    color: #17992c;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-left: 4px solid #3ee773;
+}
+/*余白上おおきめ長い*/
+.dai3 {
+    background: linear-gradient(transparent 70%, #3ee773 70%);
+    padding-left: 0.3%;
+    padding-bottom: 0.4%;
+    width: 90%;
+    min-width: 280px;
+    display: block;
+    color: #17992c;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    border-left: 4px solid #3ee773;
+}
+
+/*外部リンク指示*/
+.skd {
+    border-left: 4px solid #e9bb17;
+    padding-left: 0.2%;
+    font-weight: bold;
+    color: rgb(209, 137, 14);
+    margin-right: 10px;
+}
+
+/*外部リンク用オレンジの枠*/
+.gibs {
+    width: 57%;
+    padding: 13px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border: 2px solid #e9bb17
+}
+
+/*文字サイズ*/
+.md {
+    font-size: 125%;
+}
+
+/*下の余白*/
+.sty {
+    margin-bottom: 20px;
+}
+
+.mi-hajimeni {
+    color: #b759bb;
+    font-weight: bold;
+}
+
+BODY {
+    background-color: khaki;
+    line-height: 1.7;
+    margin-left: 3%;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.button {
+    position: fixed;
+    bottom: 27px;
+    right: 17px;
+    z-index: 200;
+
+}
+
+.button a {
+    text-decoration: none;
+    width: 10em;
+    height: 10em;
+    text-align: center;
+    vertical-align: middle;
+    color: #blue;
+    font-size: 1.7em;
+    background-color: #white;
+}
+
+.www {
+    background-color: rgb(244, 180, 71);
+}
+
+.www:hover {
+    background-color: #ddd;
+}
+
+/*マーカー風ライン*/
+.aaa {
+    background: linear-gradient(transparent 60%, #34cfb3 60%);
+}
+
+/*配置*/
+.b {
+    float: right;
+}
+
+.ch {
+    text-align: center;
+}
+
+#b {
+    float: right;
+}
+
+#d {
+    float: center;
+}
+#a {
+    float: left;
+}
+
+/*閉じる*/
+.fcl {
+    clear: both
+}
+
+.flb {
+    float: left;
+    width: 30%;
+    margin-right: 2%；
+    
+}
+
+/*トップ目次用*/
+.flb-t {
+    float: left;
+    width: 30%;
+    margin-right: 2%；
+    
+}
+
+/*ボックス*/
+.cc {
+    border: 3px solid #eedf0f;
+    background-color: #FFCCE5;
+    width: 80%;
+    line-height: 27px;
+    ;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+/*親要素トップページ目次*/
+.flcom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+   
+}
+
+/*子要素　トップページ目次*/
+.flei {
+    font-size: 88%;
+    font-weight:500;
+    font-weight: bold;
+    height: 90px;
+    margin: 7px;
+    padding: 10px;
+    background-color: #d2e7a5;
+    border: 5px dotted rgb(75, 218, 205);
+}
+
+/*トップ目次*/
+.fleii-daitaimokuji {
+    font-size:100%;
+    font-weight:600;
+    
+    height: 5%;
+    margin: 7%;
+    padding: 1%;
+    background-color: #b1f0b0;
+    border: 8px dotted rgb(75, 218, 205);
+    width: 78%;
+}
+
+.flco .flei .fleii:hover {
+    background-color: #ddd;
+}
+
+.flco {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+/*青太字*/
+.kt {
+    color: rgb(11, 60, 203);
+    font-weight: bold;
+}
+
+.chp {
+    text-align: center;
+}
+
+ul.yk li {
+    display: inline-block;
+    font-size: 90%;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 0.3em;
+    background-color: rgb(147, 236, 116);
+}
+
+ul.yk li:hover {
+    background-color: #ddd;
+}
+
+
+#c {
+    clear: both
+}
+
+#bb {
+    margin-right: 20px;
+    margin-top;
+    7px;
+    margin-bottom: 0px
+}
+
+p {
+    text-indent: 1em;
+}
+
+* {
+    line-height: 1.8;
+    font-family: sans-serif;
+    letter-spacing: 0.6px;
+}
+
+.hjm-hajimeni {
+    color: rgb(25, 148, 34);
+    font-weight: bold;
+}
+
+
+#ab {
+    float: right;
+}
+
+.in img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*画像レスポンシブ　フルードイメージ*/
+.reg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.reg2 {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+
+.reg3 {
+    width: 32%;
+    max-width: 32%;
+    height: auto;
+}
+
+.reg4 {
+    width: 61%;
+    max-width: 61%;
+    height: auto;
+}
+
+.reg5 {
+    width: 40%;
+    max-width: 40%;
+    height: auto;
+}
+
+.tp {
+    position: fixed;
+    bottom: 43px;
+    right: 27px;
+}
+
+#hh {
+    background-image: url(../pic/めいんうみしろいすなはま.jpg);
+    background-size: cover;
+    border: 7px double white;
+}
+
+li.pn {
+    display: inline;
+}
+
+.fir:first-letter {
+    font-weight: bold;
+    font-size: 117%;
+}
+
+/* リンクにカーソルが乗った時透明にする*/
+a:hover {
+    opacity: 0.5;
+}
+
+/*リストマーカーなし*/
+ul.nsi {
+    list-style-type: none;
+}
+
+/* リスト項目に余白*/
+ul.yohaku li {
+    margin-bottom: 12px;
+}
+
+/* リスト項目に余白大き目*/
+ul.yohakudai2 li {
+    margin-bottom: 22px;
+}
+
+/* リスト項目に余白、太字*/
+ul.yohaku-dai1 li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+ol.yohaku li {
+    margin-bottom: 10px;
+}
+
+/* 数字リスト項目に余白、太字*/
+ol.yohaku-dai2 li {
+    margin-bottom: 53px;
+    font-weight: bold;
+}
+
+.utn {
+    -ms--text-emphasis-style: filled circle;
+    -webkit-text-emphasis-style: filled circle;
+    text-emphasis-style: filled circle;
+}
+
+#topc {
+    height: 150px;
+    background: linear-gradient(#6f1f9f, rgb(21, 63, 212));
+}
