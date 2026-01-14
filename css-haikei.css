@@ -1,0 +1,697 @@
+/*右寄せ*/
+.b {
+    float: right;
+    margin-right: 30px;
+}
+
+.float-right-m {
+    float: right;
+    margin-right: 30%;
+}
+
+.float-right-15 {
+    float: right;
+    margin-right: 15%;
+}
+
+.float-right-8 {
+    float: right;
+    margin-right: 8%;
+}
+
+#b {
+    float: right;
+}
+
+/*左寄せ*/
+.float-left1 {
+    float: left;
+}
+
+.float-left {
+    float: left;
+    margin-right: 7%
+}
+
+/*幅指定フロート*/
+.float-left2 {
+    float: left;
+    width: 30%;
+    margin-right: 15%
+}
+
+/*幅指定フロート*/
+.float-left3 {
+    float: left;
+    width: 40%;
+    margin-right: 10%
+}
+
+.fr {
+    margin-right: 30px;
+    font-size: 90%;
+}
+
+/*フロート左余白20％*/
+.frleft10 {
+    margin-left: 10%
+}
+
+/*フロート*/
+.frb {
+    float: left;
+    margin-right: 85px;
+    width: 540px
+}
+
+/*フロート解除*/
+.cl {
+    clear: both;
+}
+
+/*文字サイズ大きめ*/
+.md {
+    font-size: 125%;
+}
+
+/*文字サイズ大、太*/
+.mdf {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*下に余白をつくる*/
+.sty {
+    margin-bottom: 30px;
+}
+
+
+.shita-yohaku {
+    margin-bottom: 50px;
+}
+
+.sty2 {
+    margin-bottom: -12px;
+}
+
+/*太字で下に余白をつくる*/
+.styfut {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.stt {
+    margin-top: 15px;
+}
+
+/*上に詰める*/
+.utum {
+    margin-top: -10px;
+}
+
+.ue-tume3 {
+    margin-top: -3px;
+}
+
+/*上に余白*/
+.ue-ake {
+    margin-top: 10px;
+}
+
+.ue-ake20 {
+    margin-top: 20px;
+}
+
+
+
+/*全体に余白*/
+.zen-ake20 {
+    margin: 20px;
+}
+
+ul.yk li {
+    display: inline;
+    font-size: 90%;
+    margin-right: 15px;
+}
+
+ul.ykm li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/*リストマーカーなし*/
+ul.nsi {
+    list-style-type: none;
+}
+
+/* リスト項目に余白*/
+ul.yohaku li {
+    margin-bottom: 5px;
+}
+
+/* リスト項目白丸に余白*/
+ul.yohaku-siromaru li {
+    margin-bottom: 5px;
+    list-style-type : circle; 
+}
+
+/* リスト項目に余白*/
+ul.yohaku-dai li {
+    margin-bottom: 15px;
+}
+
+/* リスト項目に余白、太字*/
+ul.yohaku-dai1 li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* リスト項目に余白、太字*/
+
+ul.yohaku-dai2 li {
+    margin-bottom: 55px;
+    font-weight: bold;
+}
+
+
+/* 栄養ページリスト項目に余白、文字*/
+ul.yohaku-daiei li {
+    margin-bottom: 15px;
+    font-size: 103%;
+    font-weight: bold;
+}
+
+/* 数字リスト項目に余白、太字*/
+ol.yohaku1 li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 数字リスト項目に余白*/
+ol.yohaku li {
+    margin-bottom: 10px;
+}
+
+ol.yohaku-dai li {
+    margin-bottom: 23px;
+}
+
+
+ol.yohaku-dai1 li {
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+
+
+/* 数字リスト項目に余白大、太字*/
+ol.yohaku-dai2 li {
+    margin-bottom: 53px;
+    font-weight: bold;
+}
+
+/* 数字リスト項目に余白小、太字*/
+ol.yohaku-dai3 li {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* パンくずリスト*/
+.pn {
+    display: inline;
+    color: #bc6be2;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.lk {
+    display: inline;
+    font-weight: bold;
+}
+
+H1 {
+    color: rgb(154, 56, 237);
+    text-align: center;
+    font-size: 34px;
+    line-height: 30%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+H2 {
+    color: #5a20b8;
+    height: 55px;
+    background-color: #ede35a;
+    border-bottom: 5px solid #e69831;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1%;
+    line-height: 250%
+}
+
+H3 {
+    color: #5a20b8;
+    background-color: #f1e75c;
+    margin-right: 3%;
+    border-bottom: 5px solid #6ce25d;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 22px;
+}
+
+* {
+    line-height: 1.8;
+    font-family: sans-serif;
+    letter-spacing: 0.6px;
+}
+
+/*全体*/
+body {
+    background-color: wheat;
+    margin-left: 3%;
+}
+
+/* リンクにカーソルが乗った時透明にする*/
+a:hover {
+    opacity: 0.5;
+}
+
+.tpg {
+    position: relative;
+    top: 15px;
+}
+
+/*主に単語表記、display:inline-block使用*/
+.sample {
+    font-size: 18px;
+    padding-left: 0.2%;
+    padding-bottom: 0.3%;
+    margin: 8px;
+    margin-top: 28px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(24, 171, 47);
+    border-left: 4px solid #3ee773;
+}
+
+/*主に単語表記、display:inline-block使用　舌に余白空けてる*/
+.sample2 {
+    font-size: 18px;
+    padding-left: 0.2%;
+    padding-bottom: 0.4%;
+    margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(24, 171, 47);
+    border-left: 4px solid #3ee773;
+}
+
+/*単語用2余白せまめ、上余白*/
+.sample3 {
+    font-size: 18px;
+    padding-left: 0.2%;
+    margin-top: 5%;
+    
+    padding-bottom: -5px; 
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(24, 171, 47);
+    border-left: 4px solid #3ee773;
+}
+
+
+
+/*参考サイト用 */
+.orj {
+    border-left: 4px solid #e9bb17;
+    padding-left: 0.2%;
+    color: rgb(209, 137, 14);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/*緑での強調文字大きめ*/
+.dai {
+    background: linear-gradient(transparent 80%, #3ee773 70%);
+    width: 95%;
+    box-sizing:border-box;
+    font-size: 21px;
+    
+    padding-left: 0.3%;
+    padding-bottom: 0.4%;
+    display: block;
+    color: #17992c;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3ee773;
+}
+
+
+/*余白おおきめ全体小さい*/
+.dai2 {
+    background: linear-gradient(transparent 70%, #3ee773 70%);
+    padding-left: 0.3%;
+    padding-bottom: 0.4%;
+    width: 95%;
+    min-width: 280px;
+    
+    color: #17992c;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    border-left: 4px solid #3ee773;
+}
+
+
+/*余白上おおきめ文字小さい*/
+.dai3 {
+    background: linear-gradient(transparent 70%, #3ee773 70%);
+    padding-left: 0.3%;
+    padding-bottom: 0.4%;
+    width: 95%;
+    box-sizing:border-box;
+    display: block;
+    color: #17992c;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    border-left: 4px solid #3ee773;
+}
+
+
+/* 参考サイト用*/
+.skd {
+    border-left: 4px solid #e9bb17;
+    font-weight: bold;
+    color: rgb(209, 137, 14);
+    margin-right: 10px;
+}
+
+/* オレンジの枠*/
+.gibs {
+    width: 57%;
+    padding: 13px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border: 2px solid #e9bb17
+}
+
+/*マーカー風ライン */
+.aaa {
+    background: linear-gradient(transparent 60%, #34cfb3 0%);
+}
+
+.flbe {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+/*flexbox親要素*/
+.flexbox-oya {
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+
+}
+
+/*flexbox子要素*/
+.flexbox-ko {
+    margin: 15px;
+    padding: 5px;
+}
+
+/*flexbox要素幅指定*/
+.flexbox-oya2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+
+}
+
+
+/*flexbox子要素幅指定*/
+.flexbox-ko2 {
+    margin: 10px;
+    padding: 5px;
+
+}
+
+/*食べ物・栄養のところ*/
+/*親要素*/
+.eiyo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+}
+
+/*子要素*/
+.eiyok {
+    color: #42df34;
+    font-size: 93%;
+    min-height: 330px;
+    flex-basis: 28%;
+    min-width: 290px;
+    margin: 15px;
+    padding: 7px;
+    background-color: #a6611a;
+    border: 11px dotted #158707;
+}
+
+/*食べ物・栄養のところ*/
+.dai-ei {
+    background: linear-gradient(transparent 80%, #3ee773 70%);
+    width: 95%;
+    min-width: 280px;
+    padding-left: 0.9%;
+    padding-bottom: 0.6%;
+    display: block;
+    color: #3ee773;
+    font-size: 138%;
+    font-weight: bold;
+    letter-spacing: 0.1m;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3ee773;
+}
+
+.kt {
+    color: rgb(48, 19, 190);
+    font-weight: bold;
+}
+
+/*食べ物・栄養のところ*/
+.eiyou-setumei {
+    color: rgb(25, 148, 34);
+    font-weight: bold;
+}
+
+.eiyou-honbun {
+    font-size: 105%;
+}
+
+.chp {
+    text-align: center;
+}
+
+.sh {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(152, 137, 226);
+    font-size: 100%;
+}
+
+dt.im {
+    font: bold;
+}
+
+.im {
+    font-weight: bold;
+}
+
+/*更新日時*/
+.ch {
+    text-align: right;
+    font-weight: bold;
+    font-size: 115%;
+    color:rgb(152, 137, 226);
+}
+
+/*文字間隔*/
+.jikan {
+    letter-spacing: 0.08em;
+}
+
+.dy {
+    width: 300px;
+    float: left;
+}
+
+.hd {
+    background-image: url('../pic/hosi-amanogawa-mini.jpg');
+    background-size: cover;
+    width: 100％;
+    height: 210px;
+}
+
+/* ボックス*/
+.cc {
+    border: 3px solid #eedf0f;
+    background-color: #FFCCE5;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.cc2 {
+    text-align: center;
+    border: 3px solid white;
+    background-color: #FFCCE5;
+    width: 60%;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+/*フルードイメージ*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgsz {
+    min-height: 100px;
+}
+
+/*画像レスポンシブ　フルードイメージ*/
+.reg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.reg2 {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+
+.reg3 {
+    width: 32%;
+    max-width: 32%;
+    height: auto;
+}
+
+.reg4 {
+    width: 61%;
+    max-width: 61%;
+    height: auto;
+}
+
+.reg5 {
+    width: 40%;
+    max-width: 40%;
+    height: auto;
+}
+
+.reg6 {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+.reg7 {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+}
+
+.reg8 {
+    width: 13%;
+    max-width: 13%;
+    height: auto;
+}
+
+/*主にメニュー用の親要素*/
+.flcom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+}
+
+/*主にメニュー用の親要素*/
+.flco {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+/*主にメニュー用の子要素*/
+.flei {
+    font-size: 87%;
+    font-weight: bold;
+    height: 88px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #d2e7a5;
+    border: 5px dotted rgb(75, 218, 205);
+}
+
+/*vscodeショートカット親要素*/
+.flvs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+/*vscodeショートカット子要素*/
+.flvsk {
+    flex-basis: 30%;
+}
+
+/*カーソルがのっているときの指定*/
+.flei:hover {
+    background-color: #ddd;
+}
+
+/*上に点*/
+.utn {
+    -ms--text-emphasis-style: filled circle;
+    -webkit-text-emphasis-style: filled circle;
+    text-emphasis-style: filled circle;
+}
+
+/*上ボタン設定*/
+.tp {
+    position: fixed;
+    bottom: 43px;
+    right: 35px;
+    z-index: 200;
+}
+
+.tp:hover {
+    opacity: 0.5;
+}
+
+.fir:first-letter {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+hooter {
+    background-color: #dd7cd9;
+    width: 300px;
+    height: 190px;
+    bottom: 0;
+}
