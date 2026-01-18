@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>デザイン、トレース、UXなどについて</title>
+<LINK rel="stylesheet" href="css-haikei.css" type="text/css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”author” content=”koma”>
+<LINK rel="stylesheet" href="../jquery/flexslider.css" type="text/css"><!flexsliderのcss読み込み>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script><!--Google Hosted Librariesの読み込み-->
+<script src="../jquery/jquery.flexslider.js"></script><!--flexsliderのjsの読み込み-->
+<script>
+   //class="flexslider"をスライダーにする記述。
+   $(function() {
+     $('.flexslider').flexslider({
+       controlNav: false         //ページングナビボタン表示　true or false
+     });
+     $('.flexslider').css('width', '380').css('height', '280');//スライドそのものの幅、高さの設定
+
+      $('.flexslider .slides li img').css('height', '280').css('width', '380');<!--スライド画像の幅、高さの設定,メソッドチェーン-->
+
+   });
+   </script>
+</script>
+</head>
+
+<body>
+<h1>Design<img src="./pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+<nav>
+<ul class="fr">
+  <li class="pn"><a href="index.html"target="_blank">web・アプリさくせい</a> &gt;</li>
+<li class="pn">Design</li>
+</ul>
+</nav>
+<div class="b" >
+<P class="ch">
+  <script type="text/javascript">
+<!--
+
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日');
+// 表示終了
+
+// -->
+</script>
+</P>
+</div>
+<!--スライドショー設置-->
+<div class="flexslider" >
+<ul class="slides" >
+<li>
+<img src="pic/student-pc-mini2.jpg"/>
+<p class="flex-caption">しっかり、お仕事、勉強</p>
+</li><!--キャプションはliの中に入れる-->
+<li>
+<img src="pic/pc-relax-mini3.jpg"/>
+<p class="flex-caption">たまには、ゆったり</p>
+</li>
+</ul>
+</div>
+<!--フロート解除-->
+<div class="cl">
+</div>
+<h2>目次</h2>
+<div class="flcom">
+  <a href="#trace">
+  <div class="flei">
+  トレース(
+  <br>
+  スクリーンショットや,
+  <br>
+  さまざまな拡張機能など)
+<br>
+  のとこへ<img src="nai-link.gif">
+  </div>
+  </a>
+  <a href="#uxto">
+  <div class="flei">
+  UX
+  のとこへ
+<br>
+  <img src="nai-link.gif">
+  </div>
+  </a>
+</div>
+
+<h2>きほん</h2>
+<p class="kt fir">
+数字は大きく、単位は小さく。いろいろなスタイルのフォントを組み合わせる.
+<br>
+屋外でも見やすいようにする。
+</p>
+<span class="dai">
+グルーピング（近接）</span>
+関係の近いもの、文章や画像、タイトルなどは近づける
+<h3>配置</h3>
+<span class="sample">三分割</span>
+画面を縦横、３分割にして９等分します。
+<span class="aaa">それらの線上、交差点付近にメインとなるものを配置</span>すると安定します。
+<p>
+<span class="sample">黄金比</span>縦と横の比率が1：1.618のもの
+</p>
+<span class="sample">アイキャッチ</span>　<span class="aaa">ビジュアルに視線を集中させ、アイキャッチ付近に情報を配置して、</span>閲覧してもらうことで、<BR>ユーザーに次のアクションを起こさせ視線誘導になります。
+  <p class="sty">
+  矢印には、誘導性があります。
+</p>
+<section>
+  <h3>フラットデザイン</h3>
+  <p class="kt fir">
+  シンプルで平面的なデザイン。データ量が少ない。
+</p>
+<h3>マテリアルデザイン</h3>
+<p class="kt fir">
+影を使うなど立体的。Googleの制作ガイドラインがある。
+</p>
+<span class="aaa">影や奥行きなどで、押す感覚をつけてボタン操作などを分かりやすくする。</span>
+<h3>AtomicDesign</h3>
+<p class="kt fir">
+コンポーネントから始めて、コンポーネントを組み合わせて、徐々に大きく、広く作成していくデザイン手法
+</p>
+<h2>配色</h2>
+<p class="kt fir" >
+ベースカラー、メインカラー、アクセントカラー
+<br>
+ベースカラー70％、メインカラー25％、アクセントカラー5％の割合にする。
+</p>
+<span class="sample">ベースカラー</span>　背景などに使われる色
+<p>
+<span class="sample">メインカラー</span>　ロゴやバナー、メインコンテンツなどに使う主要な色。配色を決める際には、メインカラーを始めに決める。全体のイメージになる。
+</p>
+<span class="sample">アクセントカラー</span>　「申し込みボタン」などの、目立たせたい箇所、コンテンツに使う。
+<h2 id="trace">トレース</h2>
+<p class="kt fir" >
+photoshopを使う。ページ全体のスクリーンショットを撮る。
+</p>
+フォントをチェックする。
+<h3>スクリーンショット</h3>
+<div class="cc" >
+  <span class="dai">PCでのスクリーンショット</span>
+  windowsキー+ Print Screen キーを押します
+  （ノートPCの場合、windowsキーの隣にあるFNボタンも一緒に押す）。
+  <br>
+画面全体のキャプチャが「ピクチャー」ライブラリの「スクリーンショット」フォルダーに自動的に保存される
+</div>
+<div class="cc" >
+  <span class="dai">Firefoxでのスクリーンショット</span>
+  開発ツール(F12キー)から、カメラのアイコンをクリック。<span class="aaa">ページ全体のスクリーンショットが撮れます</span>。
+  <br>
+  PCのダウンロードフォルダに保存されます。
+</div>
+<h3>開発ツール</h3>
+F12キー
+<div class="cc" >
+  <span class="dai">位置、大きさの計測</span>
+  <span class="sample">firefox</span>
+  <br>
+  ・<b>右上にある横定規のアイコンをクリック。</b>
+  <p class="kt">
+  位置情報が縦、横px単位で表示されます。ドラッグするとW(幅)、H(高さ)、＼(対角線の長さ)が表示されます。
+</p>
+<br>
+・<b>右上にある縦横定規のアイコンをクリック。</b>
+<p class="kt">
+サイト上に水平、垂直の定規が表示されます。
+</p>
+</div>
+<h3>拡張機能</h3>
+Gogle Chromeやfirefoxなどの拡張機能。
+<div class="cc" >
+  <span class="dai">フォントを調べる</span>
+<span class="sample">What Font</span>　Gogle Chrome
+<br>
+<span class="sample">FontFinder</span>　firefox
+</div>
+<div class="cc" >
+  <span class="dai">大きさを計る</span>
+<span class="sample">measureit</span>
+「Gogle Chrome」　「firefox」共にある。
+</div>
+<div class="cc" >
+  <span class="dai">大きさ、位置を計る</span>
+<span class="sample">Page Ruler</span>
+「Gogle Chrome」
+<br>
+Width(幅)、Height(高さ）、Left(左側の位置)、Top(上部の位置)、Right(右側の位置）、Bottom(下部の位置)が表示されます。
+<p class="kt">
+左上のElementsをクリックすると、各要素についても測定できます。
+</p>
+</div>
+<div class="cc" >
+  <span class="dai">スクリーンショット</span>
+  <span class="sample">FireShot</span>　「firefox」「Gogle Chrome」
+  <br>
+  ・ページ全体をキャプチャー ・表示部分をキャプチャー ・選択範囲をキャプチャー
+</div>
+<div class="cc" >
+  <span class="dai">色を調べる</span>
+  <span class="sample">ColorPick Eyedropper</span>　「firefox」「Gogle Chrome」
+  <br>
+</div>
+<h2>レイアウト</h2>
+<h2>ボタン</h2>
+<h3>きほん</h3>
+<p class="kt fir" >
+押しやすいボタン。丸いもののほうが親しみを感じる
+</p>
+<p class="kt fir" >
+  重要なボタンは、すぐに分かるように大きさや色で、ハッキリさせる。
+  <br>
+アクションボタンには、<span class="utn">このボタンを押すとどうなるかを説明するメッセージをいれる</span>。
+次のアクションが分かれば、ユーザーがボタンをクリックしやすくなります。
+<br>
+ボタンとボタンの間は十分に空け、誤操作をふせぐようにします。
+</p>
+<h3>フローティングボタン</h3>
+<p class="kt fir" >
+基本的に画面に１つだけ配置される。重要な操作に対してのみ
+</p>
+<h3>レイズドボタン</h3>
+<h3>フラットボタン</h3>
+<p class="kt fir" >
+文字だけのボタン。サイト内のテキストと区別できるようにする。
+</p>
+<h2>フォント</h2>
+フォントを使いすぎない。<span class="aaa">タイトル、本文、アクセントなど3種類ぐらいにとどめる。</span>
+<p class="kt fir" >
+線が細く、やや見づらい明朝体より、はっきりとしたゴシック体にする。長い文章の場合、太すぎる書体はNG。
+</p>
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="http://tsutawarudesign.com/yomiyasuku3.html" target="_blank">フォントについて</a>
+<h2>タイポグラフィ</h2>
+<p class="kt fir" >
+ フォント、サイズ、文字と文字との間隔、行間等を上手く組み合わせて、読みやすく、美しくする方法です。
+</p>
+ フォントを使いすぎない
+ <div class="cc" >
+ <span class="dai">
+ タイポグラフィ設計
+</span>
+<p class="kt" >
+p要素、見出し要素（h1～h4）などのテキストの設計。
+</p>
+フォントサイズや行間、字間など。
+</div>
+  <h2>ライティング</h2>
+  まず、ページ、サイトを訪れた時、<span class="aaa">一目で内容がわかるようにする</span>。
+  タイトル、見出しで、内容が分かる。
+  <br>
+  検索ワードを考えてのライティング。
+  <span class="dai">リライト</span>
+  記事などの文章を再度書き直すこと。ほぼ全部を一から書き直すことを特に言う。
+
+<h2>ユーザビリティ</h2>
+<p class="kt fir" >
+使いやすさ
+</p>
+<h2>UI（ユーザーインターフェイス）</h2>
+<ul>
+<li>
+要素など減らし、シンプルにして<span class="aaa">ユーザーを迷わせないようにする。</span>
+</li>
+<li>
+どこに何があるのか、はっきり、分かりやすくする。
+</li>
+<li>
+ボタンなど、クリックできる部分を明確にする。
+</li>
+<li>
+現在の場所が分かるようにする。
+</li>
+<li>
+ズームや横スクロールがないようにする。
+</li>
+<li>
+フォントと背景とのコントラストをはっきりとさせる。
+</li>
+</ul>
+<p>
+<a href="https://developer.apple.com/design/tips/jp/" target="_blank"><IMG src="banako.gif" >iOS でのユーザインターフェイス</a>
+</p>
+  <h2 id="uxto">UX（ユーザーエクスペリエンス)</h2>
+  <p class="kt fir" >
+  User Experience。ユーザー体験のこと
+</p>
+<h3>UXハニカム（ユーザー・エクスペリエンス・ハニカム）</h3>
+
+    <span class="dai">Useful</span>
+    役に立つ。ユーザーのニーズを満たしている。
+
+    <span class="dai">Usable</span>
+    使いやすい。画面設計など。
+    <span class="dai">Findable</span>
+    探しやすい、見つけやすい。パンくずリストなどで、すぐに現在位置がわかるようにする｡
+    <span class="dai">Credible</span>
+    信頼できる。サイトポリシー、プライバシーポリシーの存在。企業情報、製作者情報などの明記。
+    直帰率が低い。
+    <span class="dai">Accessible</span>
+    アクセスしやすい。SEO対策など。
+    <span class="dai">Desirable</span>
+    好ましい
+
+  <a href="#top"><!aタグでアイコンを囲む>
+  <img src="./icon/uebutton2.png" class="tp">
+  </a>
+  <P align="center"><IMG src="pcjoshi.png" >
+  </P>
+  <HR color="white"ize="5"><HR color="blue">
+</body>
+</html>
