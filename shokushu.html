@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>PMやQAなど、いろいろな職種について</title>
+  <LINK rel="stylesheet" href="css-haikei.css" type="text/css">
+    <meta charset="utf-8">
+<meta name="description" content="PMやQAなどの仕事内容について">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name=”author” content=”komai”>
+  <LINK rel="stylesheet" href="../jquery/flexslider.css" type="text/css"><!flexsliderのcss読み込み>
+  <!グーグルのCDN>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"><!--グーグルのCDN-->
+  </script>
+  <script src="../jquery/jquery.flexslider.js"><!のCDNの後に記述>
+  </script>
+  <script>
+     //class="flexslider"をスライダーにする記述。
+     $(function() {
+       $('.flexslider').flexslider({
+         controlNav: false         //ページングナビボタン表示　true or false
+       });
+       $('.flexslider').css('width', '380').css('height', '280');//スライドそのものの幅、高さの設定
+
+        $('.flexslider .slides li img').css('height', '280').css('width', '380');<!--スライド画像の幅、高さの設定,メソッドチェーン-->
+
+     });
+  </script>
+
+</head>
+
+<body>
+
+  <h1>いろいろな職種<img src="./pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg">
+  </h1>
+  <ul>
+  <li class="pn"><a href="index.html"target="_blank">web制作、webライフ</a> &gt;</li>
+  <li class="pn">いろいろな職種</li>
+  </ul>
+<!--フロート右寄せ-->
+<div class="b">
+<P class="ch">
+  <script type="text/javascript">
+<!--
+
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+if(year < 2000) { year += 1900; }
+
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日');
+// 表示終了
+
+// -->
+</script>
+</P>
+</div>
+
+<div class="flexslider">
+<ul class="slides">
+<li>
+<img src="pic/office3-kako.jpg"alt="オフィス"/>
+<p class="flex-caption">がんばっていきましょう</p>
+</li>
+<li>
+<img src="pic/office-work-cut2.jpg"alt="ワーク"/>
+<p class="flex-caption">しっかりと</p>
+</li>
+</ul>
+</div>
+<!--フロート解除-->
+<div class="cl">
+</div>
+<h2>PM</h2>
+
+<h3>PMO</h3>
+<p class="kt fir">
+「プロジェクトオフィス」の略。PM（プロジェクトマネージャー）の補佐的な役割をすることが多い。
+<br>
+PMOの機能や役割、形態は、企業によって大きく異なる。
+品質管理、人材育成など
+</p>
+メール題名を統一などで探す手間をなくす対策等で、コミュニケーションコストの管理をすることもある。
+<h3>PMC</h3>
+<h3>PL</h3>
+<p class="kt fir">
+プロジェクトリーダーの略。PM補佐、サブリーダーのような役割。
+</p>
+少人数のメンバーの工数、進捗、品質などの管理。
+<h2>アートディレクター</h2>
+<p>
+企画やスタッフへの指示だし。クライアントとのヒアリングやプレゼンなどのやりとり。
+</p>
+実際の制作は、ほとんどしない。
+<h2>QA</h2>
+<p class="kt fir">
+品質保証、 quality assuranceのこと
+</p>
+<h3>QAエンジニア</h3>
+顧客の満足する品質を求める。幅広い能力が求められる。
+品質管理のためのテスト設計書作成から実行。
+<br>
+フィードバック。
+クライアントとの交渉など。
+<h2>SIer</h2>
+SIer（エスアイアーまたはエスアイヤー）
+<br>
+Systems Integrator（システムインテグレーター）
+<p class="kt">
+システム設計、開発、運用、保守まで行う。
+</p>
+NTTデータや大塚商会など。
+<br>
+物理的なシステムからクラウド化が進みつつある。
+<a href="#top"><!aタグでアイコンを囲む>
+<img src="icon/uebutton2.png" class="tp">
+</a>
+<P align="center"><IMG src="pcjoshi.png" >
+</P>
+
+</body>
+</html>
