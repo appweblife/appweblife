@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>HTMLフォーム</title>
+<LINK rel="stylesheet" href="css-haikei.css" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”author” content=”komai”>
+</head>
+
+<body>
+<h1>JavaScriptのプログラム<IMG src="kingyobachimini.png" ></h1>
+<P align="right"><script type="text/javascript"><!--
+document.write( "更新日時 : ".fontcolor("orangered") , document.lastModified.fontcolor("orangered") );
+// --></script></P>
+<h2>パッケージ</h2>
+
+<h3>input</H3>
+  <h2>パッケージ</h2>
+
+  <h3>input</H3>
+
+</body>
+</html>

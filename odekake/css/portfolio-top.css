@@ -1,0 +1,134 @@
+H1 { font-family:"Yu Gothic",'HiraKakuProN-W3', sans-serif;font-size: 170%;; color:white;text-shadow: 3px 3px 2px rgb(105, 108, 115)}
+
+H2 {font-family:"Yu Gothic",'HiraKakuProN-W3';font-size: 140% ;color:#7c45f2;text-shadow: 2px 1px 1px rgb(240, 127, 162);letter-spacing: 0.2em
+}
+
+ul.yk li {
+margin-bottom: 30px;
+margin-right: 30%;
+}
+ul {
+  list-style-type: none;
+}
+li.pn  {
+display: inline;
+}
+.pnz{
+margin-bottom: 40px;
+}
+
+.br{
+  border: 14px dotted #8ff1ee;opacity: 0.9;padding-bottom: 7px;
+}
+
+.ig1{
+  position:relative;
+  top:13px;
+  left:8px;
+}
+.ig2{
+  position:relative;
+  top:13px;
+  left:3px;
+}
+.ig3{
+  position:relative;
+  top:1px;
+  left:5px;
+}
+.lg{
+  position:absolute;
+  top:95px;
+  left:5px;
+}
+.lg3{
+  position:absolute;
+  top:95px;
+  left:268px;
+}
+.ftri
+{ position:relative; top:25px;
+ }
+
+.hyo{
+   margin-bottom: 2em;
+}
+
+hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+hr {
+border-top:10px dotted #f6b1ef ;opacity: 0.5;
+}
+/*全体のテキスト*/
+* {font-family:sans-serif; font-weight:bold;font-size:101%;letter-spacing: 0.1em;text-shadow: 1px 1px 1px rgb(231, 187, 215)
+}
+
+p{color:#7628cd;text-shadow: 2px 4px 3px #cde2eb
+line-height: 150%;
+}
+.itx{
+  font-size: 146% ;color:#7628cd;
+
+}
+.mak{
+  background: linear-gradient(transparent 70%, #66ccff 40%);
+}
+a { text-decoration: none;outline: none;
+  }
+
+p.mj:first-letter {
+  font-size: 150%;
+}
+.md{
+  font-size: 135% ;
+}
+.mdf{
+  font-size: 125% ;
+}
+
+.msf{
+font-size: 85% ;
+}
+.msfc{
+font-size: 70% ;
+}
+
+.ct{
+text-align: center;
+}
+.bn {
+  position: fixed;
+  bottom: 61px;
+  right: 26px;
+  opacity: 0.7;
+}
+.tn {
+    -webkit-text-emphasis: filled circle #7628cd;
+   text-emphasis: filled circle #7628cd;
+}
+a:hover { opacity: 0.5;
+ }
+
+ .ftr {
+float: right;
+ }
+ .tct {
+ line-height: 40px;
+}
+.tct2 {
+line-height: 30px;color:rgb(148, 213, 241);text-shadow: 1px 1px 1px #3326c4 ;
+}
+.sty{margin-bottom:30px;
+}
+  footer{
+  background-color:#dd7cd9;
+  height:40px;
+  width:100%;
+  bottom:0;
+  opacity: 0.6;
+  border-radius: 10px;
+ }

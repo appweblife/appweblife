@@ -1,0 +1,122 @@
+*{font-family: sans-serif;font-weight:bold;font-size:101%;letter-spacing: 0.1em;
+}
+H1 {font-family:"Yu Gothic",'HiraKakuProN-W3';font-size: 170%;color:white;text-shadow: 5px 5px 2px rgb(105, 108, 115)
+}
+H2 {font-family:"Yu Gothic",'HiraKakuProN-W3';font-size: 140%;color:white;text-shadow: 5px 5px 2px rgb(59, 20, 130);letter-spacing: 0.2em
+}
+H3 {font-family:"Yu Gothic",'HiraKakuProN-W3';
+  font-size:110%;color:white;text-shadow:  1px 1px #09b1cf ;letter-spacing: 0.2em;border-left: solid 5px #21acd1;
+}
+.byk{
+ position:relative;left:27px;
+}
+.tpj{
+margin-bottom: 20px;
+margin-right: 20%;
+}
+ul.yk li {
+margin-bottom: 80px;
+margin-right: 13%;
+}
+ul {
+  list-style-type: none;
+}
+
+li.pn  {
+display: inline;
+}
+
+.hyo{
+   margin-bottom: 2em;
+}
+
+hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+hr {
+border-top:10px dotted #f6b1ef ;opacity: 0.5;
+margin-bottom: 1em;
+}
+.ig1{
+  position:relative;
+  top:12px;
+  left:7px;
+}
+.ig2{
+  position:relative;
+  top:13px;
+  left:3px;
+}
+.ig3{
+  position:absolute;
+  top:25px;
+  left:96px;
+}
+.ig4{
+  position:relative;
+  left:30px;
+}
+.ig5{ position:relative; top:10px; left:-9px; }
+p.mj:first-letter {
+  font-size: 150%;
+}
+p{
+line-height: 160%;
+color: white;
+}
+.md{font-size: 125% ;
+}
+.mdf{
+  font-size: 125% ;
+}
+.ssf{
+font-size: 92% ;
+}
+.msf{
+font-size: 85% ;
+}
+.msfc{
+font-size: 80% ;
+}
+
+.itx{
+  font-size: 130% ;color:rgb(219, 212, 76);
+  text-shadow: 1px 1px 2px #272d1a
+}
+.tn {
+    -webkit-text-emphasis: filled circle rgb(163, 70, 154);
+   text-emphasis: filled circle rgb(163, 70, 154);
+}
+
+.lk { text-decoration: none;outline: none; }
+a:visited { color: #51cced; }
+.bn {
+  position: fixed;
+  bottom: 61px;
+  right: 26px;
+  opacity: 0.7;
+}
+a:hover { opacity: 0.5;
+ }
+ .ftr {
+float: right;
+ }
+
+ .tct {
+ line-height: 40px;
+}
+.tct2 {
+line-height: 33px;
+}
+.sty{margin-bottom:30px;
+}
+ footer {
+  background-color:#dd7cd9;
+  height:40px;
+  width:100%;
+  opacity: 0.6;
+  border-radius: 10px;
+ }

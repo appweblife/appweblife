@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(#712fec, #b282e7);
+}
+*{font-family:"Yu Gothic",sans-serif;font-weight:bold;font-size:101%;
+}
+H1 {font-size: 175%;color:white;text-shadow: 5px 5px 2px rgb(105, 108, 115)
+}
+H2 {font-size: 140%;color:white;text-shadow: 5px 5px 2px rgb(59, 20, 130);letter-spacing: 0.2em
+}
+H3 {
+  font-size:110%;text-shadow:  2px 1px #becbee
+}
+ul.yk li {
+margin-bottom: 50px;
+margin-right: 35%;
+}
+
+ul.lik li {
+  margin-bottom: 20px;
+
+}
+li.pn  {
+display: inline;
+}
+.pnz{
+margin-bottom: 50px;
+}
+
+
+.um{
+border: 12px dotted #86d1f6;opacity: 0.7;padding-bottom: 7px;
+padding-left:5px;
+}
+.br{
+  border: 14px dotted #ec7ce1;opacity: 0.7;padding-bottom: 7px;
+  padding-left:5px;
+}
+.hyo{
+   margin-bottom: 2em;
+}
+
+hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+hr {
+border-top:10px dotted #f6b1ef ;opacity: 0.5;
+}
+.ig1{
+  position:relative;
+  top:12px;
+  left:13px;
+}
+.ig2{
+  position:relative;
+  top:13px;
+  left:3px;
+}
+.ig3{
+  position:relative;
+  top:11px;
+  left:13px;
+}
+p.mj:first-letter {
+  font-size: 150%;
+}
+p{
+line-height: 160%;
+color: white;
+}
+.md{font-size: 125% ;
+}
+.mdf{
+  font-size: 125% ;
+}
+.msf{
+font-size: 85% ;
+}
+.msfc{
+font-size: 80% ;
+}
+
+.itx{
+  font-size: 130% ;color:rgb(219, 212, 76);
+  text-shadow: 1px 1px 2px #272d1a
+}
+.tn {
+    -webkit-text-emphasis: filled circle rgb(163, 70, 154);
+   text-emphasis: filled circle rgb(163, 70, 154);
+}
+.ct{
+text-align: center;
+}
+a { text-decoration: none;outline: none;
+}
+.bn {
+  position: fixed;
+  bottom: 40px;
+  right: 35px;
+  opacity: 0.9;
+}
+a:hover { opacity: 0.5;
+ }
+ .ftr {
+float: right;
+ }
+
+ul { list-style-type: circle;
+ }
+ .tct {
+ line-height: 40px;
+}
+ footer {
+  background-color:#dd7cd9;
+  height:40px;
+  width:100%;
+  opacity: 0.6;
+  border-radius: 10px;
+ }
