@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>VLC　VLC media player </title>
+<LINK rel="stylesheet" href="css-haikei.css" type="text/css">
+  <meta charset="utf-8">
+<meta name="description" content="VLC media player について-linux">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”author” content=”koma”>
+</head>
+
+<body>
+<h1>VLC　VLC media player <img src="./pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+<ul>
+<li class="pn"><a href="index.html"target="_blank">web制作・webライフ</a>&gt;</li>
+<li class="pn">VLCについて</li>
+</ul>
+<P class="ch">
+  <script type="text/javascript">
+<!--
+
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日');
+// 表示終了
+
+// -->
+</script></P>
+  <H2>概要</H2>
+  <IMG src="./pic/VLC-top.jpg" alt="VLCトップ画" width="980" height="980">
+  
+  <p class="kt">
+  Windows、Mac、Linuxでも使用可能な”動画再生ソフト”。広告も無く無料で使用できます。
+  <br>
+  動画の早送りやスロー再生、色調調整、MP４など動画の変換、修復も出来ます。
+</p>
+動画再生ソフトのため動画保存には向いていません
+  </p>
+  <h2>目次</h2>
+  <div class="flco">
+
+    <A href="#short">
+        <div class="flei">
+            ショートカット
+            
+          
+            <br>
+            <img src="./nai-link.gif">
+        </div>
+    </A>
+    <A href="#zoom">
+      <div class="flei">
+          ズーム
+          <br>
+          設定
+
+          <br>
+
+          <img src="./nai-link.gif">
+
+</div>
+</A>
+<A href="#kaiten">
+  <div class="flei">
+      回転
+      <br>
+      上下左右逆
+
+      <br>
+      など
+      <img src="./nai-link.gif">
+
+</div>
+</A>
+<A href="#sokudo">
+  <div class="flei">
+      速度設定、
+      <br>
+      コマ送り
+
+      <br>
+      など
+      <img src="./nai-link.gif">
+
+</div>
+</A>
+<A href="#aspect">
+  <div class="flei">
+      アスペクト比
+
+      <br>
+（縦横比率）
+<br>
+設定 <img src="./nai-link.gif">
+
+</div>
+</A>
+    <A href="#sikichou">
+        <div class="flei">
+            明るさ、
+            <br>
+            コントラスト等
+            <br>
+            色調調整
+
+            <br>
+            <img src="./nai-link.gif">
+        </div>
+    </A>
+    <A href="#hozonsaki">
+      <div class="flei">
+          保存先
+          <br>
+          設定
+    
+          <br>
+    
+          <img src="./nai-link.gif">
+    
+    </div>
+    <A href="#fukusu">
+      <div class="flei">
+          複数起動
+          <br>
+          設定
+    
+          <br>
+    
+          <img src="./nai-link.gif">
+    
+    </div>
+    </A>         
+            <A href="#rokuga">
+                <div class="flei">
+                    録画
+                    <br>
+                    画面録画
+    
+                    <br>
+    方法
+                    <img src="./nai-link.gif">
+    
+        </div>
+    </A>
+</div>
+  <h2>インストール</h2>
+
+  <a href="https://www.videolan.org/vlc/index.ja.html" target="_blank">
+    VLCダウンロード<IMG src="./banako.gif">
+</a>
+
+  <h3>ダウンロード</h3>
+  <ol class="yohaku">
+    <li>
+      <br>
+  <IMG src="./pic/vlc-dw.jpg" alt="ダウンロードページ" width="780" height="780">
+
+  </li>
+  <li>ダウンロードできました
+    <br>
+    <IMG src="./pic/vlc-dwkan2.jpg" alt="ダウンロード完了" width="780" height="780">
+    
+  </li>
+</ol>
+  <h3>インストール</h3>
+  <ol class="yohaku">
+    <li>ダウンロードした「インストーラー」をクリックします
+      <br>
+      <IMG src="./pic/install-kaisi2.jpg" alt="インストール開始" width="780" height="780">
+      
+    </li>
+    <li> 日本語でOKなら「次へ」をクリック
+      <br>
+      <IMG src="./pic/vlc-gengo.jpg" alt="言語選択" width="255" height="255">
+  
+  </li>
+  <li> 「次へ」をクリック
+    <br>
+    <IMG src="./pic/install-1.jpg" alt="インストール開始" width="755" height="755">
+
+    
+  </li>
+  
+    <li>
+ざっと見て問題なければ、「次へ」をクリック
+      <br>
+      <IMG src="./pic/license-vlc.jpg" alt="ライセンス契約" width="755" height="755">
+    </li>
+  <li>デフォルトのままでOKです。「次へ」をクリック
+    <br>
+    <IMG src="./pic/op-vlc.jpg" alt="オプション設定" width="755" height="755">
+
+
+  </li>
+  <li>インストール先を決めます。デフォルトのままでOKなら「インストール」をクリック。
+    <br>
+    デフォルトとは別のインストール先にする場合は「参照」をクリックし、インストール先を選択します
+    <br>
+    <IMG src="./pic/installsaki2.jpg" alt="インストール先" width="755" height="755">
+    
+  </li>
+  <li>インストール中</li>
+  <li>「完了」をクリック
+    <br>
+    <IMG src="./pic/install-kan.jpg" alt="インストール完了" width="755" height="755">
+
+    
+  </li>
+  </ol>
+  
+  <h2>操作の基本</h2> 
+
+  <IMG src="./pic/migicli.jpg" alt="操作初め" width="955" height="955">
+  <UL class="yohaku-dai1">
+    <LI>
+  「左上のメニュー」 </LI>
+  <LI>「右クリック 」</LI>
+  <LI>「左下のアイコン」
+  </LI>
+  <LI>「ショートカット 」</LI>
+  </UL> 
+  と幾つか方法があります。 
+  <span class="dai" id="short">ショートカットキー</span>
+  <div class="float-left">
+<UL class="yohaku-dai">
+<LI>「 一時停止/再生」　<b>スペース</b></LI>
+<LI>「全画面表示」　<b>f</b></LI>
+<LI>「再生時間表示」　<b>ｔ</b></LI>
+        
+        <LI> 「エフェクトとフィルター」　<b>Ctrl+e</b></LI>
+        <LI>「スナップショット 」 　 <b>Shift+S</b></LI> 
+    </UL> 
+  </div>
+  <div class="float-left">
+    <UL class="yohaku-dai">
+
+      <LI>「キャプチャーデバイスを開く」<b>Ctrl+C</b>	</LI>
+
+      <LI> 「アスペクト比設定]
+        <b>A</b></LI>
+      <LI> 「終了」<b>Ctrl+Q</b>	</LI>
+    </UL>  
+</div>
+  <div class="float-left">
+  
+      <UL class="yohaku-dai">
+       
+
+<LI>「再生速度アップ」　<b>+</b></LI>
+<LI>「再生速度ダウン」　<b>-</b></LI>
+        
+
+      <LI>「再生速度0.1アップ」　<b>]</b></LI>
+      <LI>「再生速度0.1ダウン」　<b>[</b></LI>  
+      <LI>「コマ送り」　<b>e</b></LI>  
+      
+      
+
+          </UL> 
+
+
+  </div>  
+  <div class="float-left">
+  
+    <UL class="yohaku-dai">
+     
+
+<LI>
+  
+  「1分前に戻る」 <b> Ctrl+←</b>	</LI>
+<LI> 「1分先に進む」<b>Ctrl+→	</b></LI>
+
+</LI>  
+<LI>「5分先に進む」　<b>Ctrl+Alt+→</b></LI>     
+<LI>「5分前に戻る」　<b>Ctrl+Alt+←</b></LI>     
+
+</UL> 
+</div> 
+  <!--フロート解除-->
+  <div class="cl"> </div>
+<h2>動画の再生</h2>
+
+
+<h3>再生の基本</h3>
+
+</div>
+<span class="dai">再生</span>
+<ol class="yohaku">
+  <LI>
+    開きたい動画ファイルを"右クリック"
+    <br>
+    <IMG src="./pic/hiraku.jpg" alt="ファイル開く" width="555" height="555" >
+  </li>
+<li>
+  <b>「プログラムから開く」</b>
+</li>
+<li>
+  <b>「VLC media player」</b>をクリックします。</li>
+</ol>
+<div class="cc">
+  <span class="dai">シークバー</span>
+  <p class="kt">
+  動画、音声データの再生位置を表示する機能のこと
+</p>
+  スライダーがバーの左から右へ移動してゆく
+</div>
+<span class="dai">動画をダブルクリックで再生</span>
+<p class="kt">
+毎回「プログラムから開く」からではなく、ファイルをダブルクリックすればすぐに再生できるように設定します</p>
+<h3>いろいろな再生</h3>
+<span class="dai">リピート再生</span>
+<span class="dai" id="zoom">ズーム再生</span>
+
+<br>
+<IMG src="./pic/zoom.jpg" alt="ズーム" width="985" height="985" >
+<br>
+※スマホで撮影した動画の場合、うまくズーム出来ないことがあります
+<ol class="yohaku">
+  <LI>左下「詳細設定」のアイコンをクリック
+    <br>
+    <IMG src="./pic/shousaisettei.jpg" alt="詳細設定" width="985" height="985" >
+
+    
+  </LI>
+  <li>
+  <b>「ビデオエフェクト」</b>
+  <br>
+  <IMG src="./pic/zoom-settei.jpg" alt="ズーム設定" width="985" height="985" >
+  
+</li>
+<li><b>「ジオメトリ」を選択</b></li>
+<li><b>「インタラクティブズーム」</b>にチェックをいれます。</li>
+<li>左上に小さくウィンドウができ、ウィンドウの中の白枠がズーム箇所になります。
+  <br>
+  <ul class="yohaku">
+    <li>
+  "白枠"をドラッグすることによりズームする位置を調整できます。
+  <br>
+  <IMG src="./pic/zoom-shirowaku4.jpg" alt="ズーム白枠" width="985" height="985" >
+  
+</li>
+  <li> ウィンドウの下にある逆三角形をドラッグしてズーム箇所を拡大縮小できます
+    <br>
+    <IMG src="./pic/zoom-ookisa3.jpg" alt="ズーム大きさ" width="985" height="985" >
+    
+</li>
+</ol>
+</li>
+</ol>
+
+
+<span id="sokudo" class="dai">再生速度調整</span>
+
+<IMG src="./pic/genzai-sokudo.jpg" alt="現在速度" width="985" height="985" >
+  <br>
+  右下の”速度表示”をクリックし、目盛りを左右にドラッグすると速度調整できます
+  <br>
+  <IMG src="./pic/sokudo-memori2.jpg" alt="現在速度" width="405" height="405" >
+<div class="cc">
+  <span class="dai">再生速度ショートカット</span>
+  <UL class="yohaku-dai">
+       
+
+    <LI>「再生速度アップ」　<b>+</b></LI>
+    <LI>「再生速度ダウン」　<b>-</b></LI>
+            
+    
+          <LI>「再生速度0.1アップ」　<b>]</b></LI>
+          <LI>「再生速度0.1ダウン」　<b>[</b></LI>  
+          <LI>「コマ送り」　<b>e</b></LI>  
+          
+          
+    
+              </UL> 
+
+</div>
+<span class="sample">速度セレクター</span>
+メニューバーの<b>「ツール」</b>－<b>「インターフェースのカスタマイズ」</b>
+<div class="cc" >
+<span class="dai">コマ送り</span>
+<p>
+  <b>ショートカット「e」</b>。または左下”縦線とやじるしの形のコマ送りのアイコン”をクリック
+</p>
+  <IMG src="./pic/komaokuri.jpg" alt="コマ送り" width="955" height="955" >
+</div>
+<span  id="kaiten" class="dai">回転</span>
+<p class="kt">
+  90度回転、180度回転や細かな角度での回転などいろいろ調整できます</p>
+  <ol class="yohaku-dai1">
+    <LI>
+右クリック「ツール」</LI>
+
+<LI>「エフェクトとフィルター」</LI>
+<LI>「ビデオエフェクト」
+
+  <br>
+  <IMG src="./pic/kaiten.jpg" alt="回転" width="955" height="955" >
+  <p>
+
+</LI>
+<LI>「ジオメトリ」</LI>
+<LI><ul class="yohaku">
+  <li>「変換」にチェックをいれ、回転、反転など任意のものを選択</LI>
+
+    <li>細かく設定する場合は「回転」にチェックを入れアンクルを動かし調整します
+      <br>
+      <IMG src="./pic/komakanakakudo-vlc.jpg" alt="細かな角度調整" width="955" height="955" >
+      
+  </li>
+</ul>
+</li>
+</ol>
+<span class="dai" id="aspect">アスペクト比</span>
+<p class="kt">
+画面の縦横比の設定</p>
+
+<span class="sample">ショートカットキー</span><b>「A」</b>
+<ol class="yohaku-dai1">
+<LI>右クリック「ツール」
+  
+
+ 
+</LI>
+
+<li>「ビデオ」</li>
+<li>「アスペクト比」</li>
+<li>任意の数値を選択</li>
+</ol>
+●アスペクト比4：3
+<br>
+    <IMG src="./pic/43.jpg" alt="4：3" width="755" height="755" class="shita-yohaku">
+    <p>
+      ●アスペクト比16：9
+      </p>
+          <IMG src="./pic/169.jpg" alt="16：9" width="755" height="755">  
+            
+            <span class="dai">クロッピング</span>
+            <ol class="yohaku">
+              <LI>右クリック「ツール」</LI>
+              <li><b>「エフェクトとフィルター」</b>
+              
+                <br>
+                <IMG src="./pic/cropping.jpg" alt="「クロッピング」" width="1155" height="1155" >
+                
+              </li>
+              <li>
+              <b>「ビデオエフェクト」</b></li>
+              <li><b>「クロッピング」</b></li>
+              <li>上下左右任意の数値を入力。必要に応じて上下左右連動にチェック</li>
+</ol>
+<div class="cc" >
+  <span class="dai">
+クロッピングした動画を保存</span>
+</div>
+<h3 id="sikichou">色調調整</h3>
+<p class="kt">
+明るさ、コントラスト、彩度などの調整</p>
+<ol class="yohaku-dai1">
+  <LI>右クリック</LI>
+  <li><b>ツール</b>
+    <br>
+    <IMG src="./pic/sikichou-t.jpg" alt="「エフェクトとフィルター」" width="755" height="755" >
+  </li>
+  <li>「エフェクトとフィルター」</li>
+    <li><b>ビデオエフェクト</b>
+      <br>
+      <IMG src="./pic/sikichou-shousai.jpg" alt="「色調詳細」" width="755" height="755" >
+      
+    </li>
+
+      <li>基本
+</li>
+<li>「明るさ」「コントラスト」など各項目の調整
+</li>
+</ol>
+<p>
+<span class="sample">シャープネス</span></p>
+<h2>スナップショット</h2>
+<span class="dai">撮影方法</span>
+<p>左下”カメラのアイコン”をクリック</p>
+      <IMG src="./pic/scshot.jpg" alt="スクリーンショット" width="755" height="755" >
+        
+
+
+
+
+<span class="dai" id="hozonsaki">保存先</span>
+パソコンの<span class="aaa">”ピクチャのフォルダ”</span>に保存されます
+<div class="cc" >
+  <span class="dai">保存先変更</span>
+  <ol class="yohaku">
+    <li>
+  右クリック</li>
+  <li>ツール
+
+    <br>
+    <IMG src="./pic/hozonsaki1.jpg" alt="「保存先」" width="755" height="755" >
+    
+    
+  </li>
+  <li>設定
+    <br>
+    <IMG src="./pic/hozonsaki2.jpg" alt="「保存先決定」" width="755" height="755" >
+
+    
+  </li>
+  <li>ビデオ</li>
+  <li>ディレクトリ</li>
+  <li>「参照」をクリックし保存先を選択</li>
+  </ol>
+  </div>
+  <h2 id="fukusu">複数起動</h2>
+  動画を2画面、３画面など複数再生起動できます
+  <ol class="yohaku-dai1">
+    <LI>右クリック</LI>
+    <li><b>ツール</b>
+      <br>
+      <IMG src="./pic/vlc-settei2.jpg" alt="「ツール設定」" width="755" height="755" >
+    </li>
+    <li>設定</li>
+  <li>
+    「インターフェース設定」タブの「プレイリストとインスタンス」項目にある下記のチェックを外す
+    <br>
+    <IMG src="./pic/kidoufukusuu-hozon.jpg" alt="チェックを外し保存" width="755" height="755" >
+    
+    <ul>
+      <li>
+        「ひとつだけ実行を許可」 </li>
+    <li>「ファイルマネージャーから起動された場合、単一インスタンスで実行」</li>
+    
+</ul>
+  </li>
+  <li>「保存」をクリック</li>
+  </ol>
+<h2 id="rokuga">録画</h2>
+<span class="dai">設定</span>
+
+右クリック
+<h3>録画方法</h3>
+
+<span class="dai">動画を録画</span>
+<p class="kt">動画を再生中に左下”赤いボタン”をクリック</p>
+
+<span class="dai">画面を録画</span>
+<ol class="yohaku">
+  <li>
+    「VLC」を起動させます</li>
+ 
+  
+    <li>右クリックし<b>「メディアを開く」</b>（またはショートカットキー<b>Ctrl+C</b>）
+      <br>
+      <IMG src="./pic/vlc-migicl.jpg" alt="「右クリックメディアを開く」" width="955" height="955" >
+    
+      
+    </li>
+<li><b>「キャプチャーデバイスを開く」</b>を選択</li>
+  <li>「キャプチャーデバイス」タブの「キャプチャーモード」で「デスクトップ」を選択
+    <br>
+    <IMG src="./pic/desktop-sentaku.jpg" alt="「キャプチャーモード」で「デスクトップ」を選択" width="755" height="755" >
+    
+  </li>
+   
+    <li><b>「フレームレート」</b>を設定
+      <br>
+      ※上げると滑らかになりますが容量が増えます、下げると画質が落ちますが容量は減ります
+      。<span class="aaa">30.00フレーム程度に設定。滑らかに録画したいのであれば60.00フレーム。</span>
+
+      <br>
+      <IMG src="./pic/frame-vlc.jpg" alt="フレームレート" width="755" height="755" >
+      
+    </li>
+    <li>「変換」を選択しクリック </li>
+    <li>「設定」「プロファイル」横のアイコンをクリック </li>
+  <li>「プロファイルのエディション」が開きます
+    </li>
+    <li>「ビデオコーデック」タブ</li>
+    <li>「エンコーディングパラメーター」の「ビットレート」を「6000kb」ぐらいが適正</li> 
+    
+    <li>「保存」をクリック。</li>
+    <li>「参照」をクリックし録画ファイルの保存先とファイル名を決定します</li>
+    <li>「開始」をクリックし録画スタート</li>
+    <li>「停止」をクリックすると録画終了</li>
+</ol>
+<h2>動画の変換</h2>
+<p class="kt">
+MP４などに変換できます</p>
+<ol class="yohaku">
+  <li>
+    「メディア」
+    <br>
+    <IMG src="./pic/henkan21.jpg" alt="メディア、変換" width="855" height="855" >
+  </li>
+    <li>「変換/保存」</li>
+    <li>「ファイル」
+      <br>
+      <IMG src="./pic/tuika.jpg" alt="ファイル、追加" width="855" height="855" >
+
+      
+    </li>
+    <li>「追加」</li>
+    <li>修復したいファイルを選択</li> 
+
+    <li>変換を選択しクリック</li>
+    <li>参照をクリックし保存先を決定します</li>
+</ol>
+<h2>動画の修復</h2>
+<p class="kt">
+VLCで”再生出来ない場合”は修復は難しい
+</p>
+<ol class="yohaku">
+  <li>
+「メディア」
+<br>
+<IMG src="./pic/henkan21.jpg" alt="メディア、変換" width="855" height="855" >
+</li>
+</li>
+<li>「変換/保存」</li>
+<li>「ファイル」
+  <br>
+  <IMG src="./pic/tuika.jpg" alt="ファイル、追加" width="855" height="855" >
+
+</li>
+<li>追加</li>
+<li>修復したいファイルを選択</li>
+<li>「オリジナルのビデオトラックを保持」にチェックを入れる</li>
+</ol>
+<div class="flc">
+<P align="center">
+  <IMG src="pcjoshi.png"alt="楽しくpc" >
+</P>
+<a href="#top">
+<IMG src="./icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+</a>
+
+</body>
+</html>
