@@ -1,0 +1,419 @@
+<html>
+<head>
+  <title>アプリ開発について</title>
+  <LINK rel="stylesheet" href="css-haikei.css" type="text/css">
+    <meta name="description" content="開発の流れやユーザーについてなど基本的なことを書いています。">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name=”author” content=”koma”>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1S5ZLCQ35K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1S5ZLCQ35K');
+</script>
+
+<body>
+<header>
+  <h1>アプリ開発<img src="./pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+
+</header>
+
+
+<p class="ch"><script type="text/javascript">
+<!--
+
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日（' + week + '）');
+// 表示終了
+
+// -->
+</script>
+</P>
+<ul>
+
+<li class="pn"><a href="index.html"target="_blank">web制作・webライフ</a> &gt;</li>
+<li class="pn">アプリ開発</li>
+</ul>
+<h2>目次</h2>
+<div class="flco">
+<A href="#appk">
+<div class="flei">
+アプリ開発
+<br>
+の流れ
+<br>
+  <IMG src="nai-link.gif" >
+  </div>
+</A>
+<A href="#user">
+<div class="flei">
+ユーザー
+<br>
+について
+<br>
+  <IMG src="nai-link.gif" >
+  </div>
+</A>
+<A href="#api">
+<div class="flei">
+API
+<br>
+について
+<br>
+  <IMG src="nai-link.gif" >
+  </div>
+</A>
+</div>
+
+<h2>基本</h2>
+<IMG src="pic/apri-mini.jpg" alt="アプリ"width="370" height="370">
+
+<p class="kt fir">
+MacOSXでないとiOSアプリ開発はできない。WindowsOSだとできない。
+</p>
+<a href="https://play.google.com/store" target="_blank">play store<IMG src="banako.gif" ></a>
+<div class="cc" >
+<span class="dai">
+  コンパイラ
+</span>
+<p class="kt fir">
+人間が書いたプログラムをコンピュータが分かるように変換するプログラム
+</p>
+コンパイルはビルド作業の一部
+</div>
+<div class="cc" >
+<span class="dai">
+  デバッグ
+</span>
+<p class="kt fir">
+プログラムの誤り・不具合・欠陥といったバグを探して取り除き、修正すること。
+</p>
+</div>
+<div class="cc" >
+<span class="dai">
+  デプロイ
+</span>
+<p class="kt fir">
+アプリなどを実際に利用可能にすること
+</p>
+</div>
+<div class="cc" >
+<span class="dai">
+  プリインストール
+</span>
+<p class="kt fir">
+OS、アプリなどが、最初からインストールされていること。
+
+</p>
+</div>
+<div class="cc" >
+<span class="dai">
+  プッシュ通知
+</span>
+<p class="kt fir">
+アプリから表示や音で通知する機能です。 アプリの更新情報などがあります。
+</p>
+プッシュ通知の頻度、適切さを考える。あまりにも多い場合
+<br>
+や不適切な時間だとユーザーから削除される。
+</div>
+<div class="cc" >
+<span class="dai">
+  トランジション
+</span>
+<p class="kt fir">
+Webページの移動時などで、フェードインやフェードアウトなど画面の切り替えを滑らかにしたり、強調する方法の1つ。
+</p>
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="https://blogs.adobe.com/creativestation/web-xd-ui-transition-easing" target="_blank">トランジションについて</a><IMG src="banako.gif" >
+</div>
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="https://blog.codecamp.jp/application-%20development-tool-8" target="_blank">かんたんアプリ開発</a>
+<h3>SDK</h3>
+<b>「Software Development Kit</b> 　ソフトウェア開発キット
+<p class="kt fir">
+ソフトウェアを開発するために必要なプログラムや文書などをひとまとめにしたパッケージのこと。
+<br>
+有償、無償がある
+</p>
+<h2>スマホ用語</h2>
+<div class="cc" >
+<span class="dai">
+  タップ
+</span>
+<p class="kt fir">
+  画面を指で軽く1回叩く。画面タッチ
+</p>
+</div>
+<div class="cc" >
+<span class="dai">
+  ピンチ
+</span>
+<p class="kt fir">
+  画面の縮小や拡大をすることを「ピンチイン」「ピンチアウト」といいます。
+<br>
+  2本の指で画面をつまむようにする。
+<br>
+  または、広げると拡大・縮小ができます。
+</p>
+</div>
+<h2 id="appk">アプリ開発の流れ</h2>
+<IMG src="pic/pc-phone-mini.jpg" alt="pcとスマートフォン"width="390
+  " height="390">
+<p class="kt">
+1、設計　2,実装（コーディング）　3,テスト　4,リリース
+<br>
+[ウォーターフォール開発]と[アジャイル開発]とがある。
+</p>
+<h3>開発方法</h3>
+<span class="dai">
+ウォーターフォール開発
+</span>
+<b>最初の設計を重視</b>し変更、トラブルには弱い。
+
+<span class="dai">
+アジャイル開発
+</span>
+  アジャイル（素早い）。仕様や設計の変更、追加に対応しやすい。
+  <br>
+  <b>小規模、機能で実装とテストを行い開発していく</b>。
+
+<h3>企画・設計</h3>
+<p class="kt fir">
+アプリの画面や機能についての仕様、モックアップの作成。課金システムなど
+</p>
+<div class="cc" >
+<span class="dai">
+  課金システムについて
+</span>
+ダウンンロード時点で課金するのか。
+<br>
+アプリ内課金でダウンロードは無料、追加機能は課金にするのか。
+<br>
+広告表示タイプにするのか。など
+</div>
+<div class="cc" >
+<span class="dai">
+画面設計・導線設計
+</span>
+<p class="kt fir">
+ユーザーを迷わせない、離脱させない。操作しやすい。
+<br>
+企業やサービス、商品のイメージに適したビジュアル。
+</p>
+</div>
+<div class="cc" >
+<span class="dai">
+画面遷移など
+</span>
+画面遷移（トランジション）の仕方について、紙に手書きでワイヤーフレームを作成する手段もある。
+<br>
+<span class="aaa">指での操作を常に考える。</span>プロトタイプでの確認。
+</div>
+
+<h3>実装（コーディング）</h3>
+<h3>テスト</h3>
+<p class="kt fir">
+「テスト仕様書」と呼ばれるチェックリストによってテストする。
+</p>
+アプリが問題なく起動するかどうか、機種によってレイアウトが崩れないか、
+</div>
+
+
+<h3>  リリース</h3>
+<p class="kt fir">
+PLAY ストアへアプリ公開の手続き、Google Play Developer への登録（25 ドル必要）。iTunes Connectへの申請。
+</p>
+<div class="cc" >
+<span class="dai">
+Android
+</span>
+Android アプリは、アプリの審査がないため短時間でリリースされる。
+</div>
+<span class="orj">外部リンク参考サイトさん</span>
+<a href="https://i-app-tec.com/ios/itunes-connect.html" target="_blank">iTunes Connect にアプリ申請やり方 </a>
+
+
+<h2>デザイン</h2>
+<span class="orj">外部リンク参考サイトさん</span><a href="https://employment.en-japan.com/engineerhub/entry/2017/07/21/110000" target="_blank">「デザインガイドライン」と「コンポーネント」</a>
+<h3>UI（ユーザーインターフェイス） </h3>
+<ul  class="yohaku-dai">
+  <li>
+「ボタン」、「文字」は小さくないか。</li>
+<li>
+片手、親指で押しやすい、操作しやすい位置か。</li>
+<li>
+屋外でも見やすい、使いやすいか。</li>
+</ul>
+<h3>Human Interface Guidelines</h3>
+iOSのデザインガイド
+<h3>Material Design Guidelines</h3>
+Google、Androidアプリ
+<h2 id="user">ユーザーについて</h2>
+<h3>アクティブ ユーザー </h3>
+<p class="kt fir">
+期間内に1回以上の利用があるユーザー。アプリダウンロード後、利用してないユーザーを除く目的。
+<br>
+アプリによってアクティブ ユーザー は異なる。
+</p>
+<span class="dai">
+DAU（デイリーアクティブ ユーザー ）
+</span>
+<p class="sty">
+1日におけるアクティブユーザー数。ゲームアプリなど。
+</p>
+<span class="dai">
+WAU（ウィークリーアクティブ ユーザー ）
+</span>
+<p class="sty">
+1週間におけるアクティブユーザー数
+</p>
+<span class="dai">
+MAU(月間アクティブ ユーザー ）
+</span>
+<p class="sty">
+1か月におけるアクティブユーザー数。ECアプリなど。
+<h2>統合開発環境（IDE）</h2>
+<p class="kt fir">
+コンパイラ、デバッガなどを組み合わせたもの。
+</p>
+<a href="http://proengineer.internous.co.jp/content/columnfeature/6290#section308" target="_blank">日本語対応の統合開発環境</a>
+<h3>Xcode</h3>
+<p class="kt fir">
+iPhone、Macアプリなどapple用。Objective-CまたはSwift使用。
+</p>
+<h3>AndroidStudio</h3>
+<a href="https://developer.android.com/studio/?hl=ja" target="_blank">AndroidStudio<IMG src="banako.gif" ></a>
+<p class="kt fir">
+Androidアプリ開発
+</p>
+<span class="aaa">デバッグするためのデバッグビルド</span>と、ユーザーへ<span class="aaa">リリースするためのリリースビルド</span>が使用できます。
+<div class="cc" >
+<span class="dai">
+  リリース
+</span>
+<a href="https://developer.android.com/studio/publish/?hl=ja" target="_blank"><IMG src="banako.gif" >Android Studioリリース</a>
+自分のwebサイトからダウンロードできるようにしてアプリをリリースすることもできる。
+</div>
+<h2>スマホアプリ</h2>
+<div class="cc" >
+<span class="dai">
+  WebView
+</span>
+<p class="kt fir">
+Android OSやiOSなど主にスマートフォンに標準で組み込まれているWebページを読み込んで表示する機能。
+</p>
+</div>
+<a href="https://ferret-plus.com/6009" target="_blank">javascriptでできるアプリ開発</a>
+<h3>ネイティブアプリ</h3>
+<p class="kt fir">
+スマートフォンに初めからあるアプリやplayストアなどで購入できるもの。
+<br>
+ AndroidアプリやiOSアプリ。
+</p>
+動作が早い
+<h3>webアプリ</h3>
+<p class="kt fir">
+インターネット接続が必須で、Webブラウザ上で動作する。
+<br>
+「Gmail」、「Google Maps」など。
+</p>
+動作が遅い。
+<h3>ハイブリッドアプリ</h3>
+<h2>PhoneGap Build</h2>
+無償と有償の2種類のプランがあります。
+<h2>Cordova</h2>
+<p class="kt fir">
+HTML5、CSS、JavaScriptでiOSとAndroid向けのアプリを作成できます。
+</p>
+ゲームアプリには向いていない。
+<h2>Onsen UI</h2>
+<a href="https://ja.onsen.io/" target="_blank">Onsen UI<IMG src="banako.gif" ></a>
+<a href="http://blog.asial.co.jp/1472" target="_blank">Onsen UI始め方</a>
+<br>
+インストールには、Node.jsとnpmを使う方法。Monacaを使う方法などがある
+<h2 id="api">API</h2>
+<p class="kt fir">
+インターネット経由で別のプログラムを呼び出し利用すること。
+<br>
+Google Mapsなどがある。莫大なデータを取り寄せたりするために利用する。
+<br>
+アマゾンやFacebook、Twitter、Yahooも利用している。
+</p>
+<h3>活用方法</h3>
+APIキーを取得する
+<p>
+XML形式とJSON形式があるが、JSON形式の方が分かりやすい。
+</p>
+<div class="cc" >
+  <span class="dai">JSON形式</span>
+  「JavaScript Object Notation」の略で「ジェイソン」と読む。
+    <A href="JavaScript.html#JSON"target="_blank">JSONについて<IMG src="nai-link.gif" ></A>
+</div>
+<h2>課金（マネタイズ）</h2>
+<h3>アプリ内課金</h3>
+<h3>広告</h3>
+<div class="cc" >
+  <span class="dai">広告仲介会社</span>
+  nend、AdMob(googleアカウントが必要)など　<a href="http://nend.net/" target="_blank">nend<IMG src="banako.gif" ></a>
+  <a href="https://support.google.com/admob/answer/7356219" target="_blank">AdMobガイド<IMG src="banako.gif" ></a>
+</div>
+<div class="cc" >
+  <span class="dai">バナー型</span>
+</div>
+<h2>PHP</h2>
+<h2>javascript</h2>
+<h3>Titanium</h3>
+<p class="kt fir">
+JavaScript で iOS 、Android の<span class="utn">ネイティブアプリ</span>を開発できます。
+</p>
+<a href="http://install.titanium-mobile.jp/" target="_blank">Titanium<IMG src="banako.gif" ></a>
+<h3>Monaca</h3>
+<p class="kt fir">
+WindowsだけでiOSの<span class="utn">ハイブリッドアプリ</span>の開発やストア公開もできる。
+</p>
+<a href="https://ja.monaca.io/" target="_blank">Monaca<IMG src="banako.gif" ></a>
+　<a href="https://ja.monaca.io/free-plan.html" target="_blank">Monacaフリープランについて<IMG src="banako.gif" ></a>　個人利用および非商用に限り可
+  <div class="cc" >
+    <span class="dai">初めの使い方</span>
+<span class="orj">外部リンク参考サイトさん</span><a href="https://tonari-it.com/monaca-simple-camera-appli/" target="_blank">Monaca使い方</a>
+</div>
+  <div class="cc" >
+    <span class="dai">ビルド</span>
+    <a href="https://docs.monaca.io/ja/products_guide/monaca_ide/build/ios/build_ios/" target="_blank">Monacaビルドについて<IMG src="banako.gif" ></a>
+
+　<span class="orj">外部リンク参考サイトさん</span><a href="https://tonari-it.com/monaca-build-appli/" target="_blank">Monacaビルドについて</a>
+  </div>
+<h3>Ionic</h3>
+アプリのフレームワーク。Angularを使用している。Web、iOS、Android アプリが開発可能。
+<br>
+日本語の情報はやや少なめだが、英語情報は豊富。
+<h3>React Native</h3>
+Facebookが提供していて、Javascriptだけでアプリ開発が可能
+<h2>Unity</h2>
+<p class="kt fir">
+ゲームに特化している。iOS、Android、Windows、OSXだけでなくPlayStationやWiiUなどでも可能
+</p>
+<a href="https://unity3d.com/jp" target="_blank">Unity<IMG src="banako.gif" ></a>
+  <a href="#top">
+  <IMG src="./icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+  </a>
+<HR color="white"ize="5"><HR color="blue">
+
+</body>
+</html>
