@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>HTMLフォーム</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<LINK rel="stylesheet" href="../css-haikei.css" type="text/css">
+
+</head>
+
+<body>
+<h1>HTMLform<img src="../pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+<P class="ch">
+<script type="text/javascript">
+<!--
+
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+if(year < 2000) { year += 1900; }
+
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日');
+// 表示終了
+
+// -->
+</script>
+</P>
+
+<h2>フォームタグ</h2>
+
+  <UL>
+    <LI><span class="aaa">form　/formの内に記述する。</span></LI>
+    <LI>単体では動作せず、ほとんどは外部のスクリプト（CGIやPHPなど）を必要とします。
+
+</LI>
+<LI>フォーム単体では動作しません。<span class="aaa">formタグと各入力フォーム（inputがほとんど）が必要。</SPAN></LI>
+  <LI>入力フォームや送信フォームを表示させたい時に使う</p></LI>
+</UL>
+<div id="fo">
+  <DIV CLASS="gibs">
+  <span class="skd">外部リンク参考サイトさん</span>
+  <a href="http://www.tagindex.com/html_tag/form/index.html" target="_blank">・フォームタグ一覧　</a>
+  <a href="http://www.dspt.net/html_tag/008_data/001.html" target="_blank">・フォームの設置　</a>
+  </div>
+<div class="cc" >
+
+<span class="orj">外部リンク参考サイトさん</span>
+  <a href="http://www.tagindex.com/html_tag/form/form_target.html" target="_blank">target=""属性</a>
+<p class="kt">
+form要素に target="　"を追加すると、送信結果をどのウィンドウに表示するのかを指定できます。
+</p>
+<UL type="circle">
+  <li><B>_blank</B>　	新規のウィンドウに表示　<b>target="_blank"</b></li>
+                  <li><B>_self</B> 	　現在のウィンドウに表示　<b>target="_self"</b></li>
+                </ul>
+    </DIV>
+
+　　・<span class="aaa"><b>action="送信先"</b>　データの送信先を記載。URLやファイル名など</SPAN>
+  <br>
+
+<div class="cc" >
+  <B>enctype="　" </B>を追加すると、送信時のMIMEタイプを指定することができます。
+  <br>
+  <span class="skd">外部リンク参考サイトさん</span>
+  <a href="http://www.tagindex.com/html_tag/form/form_enctype.html" target="_blank">
+    <B>enctype="　" </B></a>
+  <p>
+  ※この属性を使用する場合は、<span class="aaa">method属性に post を指定しておく</span>
+    <br>
+ (一般的なフォームでは、enctype属性の指定はしなくてもよい。)
+</p>
+ <p>
+<span class="sample">multipart/form-data</SPAN>
+  <BR>
+
+データをマルチパートデータとして送信します。 <span class="aaa"><B>フォーム内にファイルの送信欄を配置する場合は、この形式を指定しておく </b></SPAN>
+<br>
+  <span class="aaa"><B>enctype="multipart/form-data"</b></SPAN>
+  </p>
+</DIV>
+
+<h3>input</H3>
+<p class="kt">
+入力フォームの各種部品（テキスト<span class="aaa">入力欄やボタンなど</SPAN>）を作成する要素
+</p>
+<span class="orj">外部リンク参考サイトさん</span>
+<a href="http://www.tagindex.com/html_tag/elements/input.html" target="_blank"><b>input 要素</b></a>
+
+<div class="cc" >
+  <span class=dai>テキストボックス</span>
+  <span class="aaa">必ずname属性を記述してテキストボックスに名前を指定する。</span>
+    <p>
+ <span class="aaa"><B>INPUT type="text"name="テキストボックスにつける名前"</B></span>で表示。
+</p>
+一行テキストボックスの色と大きさをかえる　色と大きさとか２つ以上指定するときには<B>「;（セミコロン）」</B>で区切る。
+
+<UL type="circle"><li><b>テキストの横幅 　INPUT type="text" size="数値"</B></li>
+  <BR>
+<li><b>初めからテキストに文字等を表示　INPUT type="text" value="テキストボックスに表示される文字"</b>　　<BR>　value属性の値に表示させたい文字を記述</LI>
+  <br>
+
+<LI><b>パスワード形式入力欄　INPUT type="password" name="パスワードボックスにつける名前"</B>
+
+</ul>
+<span class=dai>
+<B>複数行入力</B>（TEXTAREAタグ）</a></span>
+<p class="kt">
+  TEXTAREA cols="横幅" rows="行数" name="名前"　/TEXTAREA
+</p>
+<a href="http://masaboo.cside.com/new_html1/ht_57.htm" target="_blank">TEXTAREAタグについて</a>
+  /textareaで閉じる。
+INPUTタグは使わない
+<BR>
+テキストエリアボックスのサイズは<B>cols属性で横幅を、rows属性で行数をそれぞれ指定</B>することが出来ます。
+<BR>
+<span class="aaa">textarea要素には、cols属性とrows属性が必須となります。</SPAN>
+</DIV>
+<BR>
+<a href="http://masaboo.cside.com/new_html1/ht_60.htm" target="_blank">プルダウンボックス</a>　　　<b>SELECT～/SELECTで範囲を指定</b>し、この中に、項目数分<b>OPTION～/OPTION</b>を記入。
+
+<div class="cc" >
+  <a href="http://www.dspt.net/html_tag/008_data/004.html" target="_blank">送信ボタン</a>
+　<a href="http://masaboo.cside.com/new_html1/ht_62.htm" target="_blank">送信ボタン</a>
+<p class="kt">
+フォームに記入されたデータをCGIやJavaScriptに受け渡したり、メールを使って送信するには、
+<BR>送信ボタンを作ってデータを送信します。
+</p>
+  　INPUTタグに<B>「type="submit"」</B>属性を追加　<span class="aaa"><B>
+    <BR>「value="　　"」</B>属性を追加すると、ボタンに表示するラベル（名前）を指定できる。</span>
+    <br><B><BR>「name="　"」</B>属性を追加すると、フォーム内に複数の送信ボタンを設置できる。（名前はそれぞれ変える。）
+      <BR>
+        また、この属性は外部スクリプトによっては指定する必要があります。
+        <p class="kt">
+          INPUT type="submit" name="名前" value="ボタンに表示する名前"
+        </p>
+  </DIV>
+
+<div class="cc" >
+  <a href="http://www.tagindex.com/html_tag/form/input_file.html" target="_blank"><B>type="file"</b></a>　ファイルをアップロードするための入力欄を作成。　　<a href="http://www.dspt.net/html_tag/008_data/012.html" target="_blank"><B>参照欄の作成</b></a>
+
+<p>
+  自動的に「参照...」（または「ファイルを選択」）と書かれたボタンが表示されます。
+</p>
+※ファイルを送信するフォームでは、<span class="aaa">enctype属性に multipart/form-data を指定しておく</SPAN>必要があります。
+  <BR>
+フォーム内に複数の参照ボタンを設置する場合や、フォームの内容を処理する外部スクリプトによって<BR>名前付けが必要とされる場合には、<span class="aaa">「name=""」という属性を追加して名前を指定します。
+  <p class="kt">
+  input type="file" name="名前" size="入力欄の長さ"
+  </p>
+
+※送信されたファイルをサーバー側で受信するには、その機能を持ったCGI等のプログラムが必要になります。
+ </DIV>
+
+<h3>method属性</h3>
+
+<b>formタグ</b>に指定する属性で必須ではない　<span class="aaa">送信するときの転送方法を指定</span>する
+
+<p class="kt">method="　"の中に入れるのは、 <b>post（一度に大量のデータを送信することができます）とget</b>がある
+</p>
+
+<div class="cc" >
+  <span class="dai">postを使う時</span>
+
+・<b>サーバーでデータ更新をする場合</b>　　
+
+データを書き換えたり、削除したり、新規登録したりする場合。
+<br>
+サーバーデータに受け渡す値が見えていたら、容易に書き換えが可能になる。
+<p>
+・<b>データ量が多い場合</b>　　
+Internet Explorerでは処理できるURLの長さに制限があるため、<br>データ量が多いときはPOSTにする。
+</p>
+
+・<b>秘匿情報を送る場合</b>　　
+
+メールアドレスやパスワードなど外部に知られたくない情報を送る場合。
+<br>
+具体例<br>
+個人情報の入力フォーム<br>
+ECサイトでの商品注文フォーム<br>
+Email送信
+ </div>
+
+<a href="#top"><!aタグでアイコンを囲む>
+<img src="./icon/uebutton2.png" class="tp">
+</a>
+<P align="center"><IMG src="../pcjoshi.png" ></P>
+  <a href="#top">
+  <IMG src="../icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+  </a>
+　<HR color="white"ize="5"><HR color="blue">
+
+</body>
+</html>
