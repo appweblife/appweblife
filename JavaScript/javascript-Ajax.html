@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<title>Ajax(エイジャックス)</title>
+<LINK rel="stylesheet" href="../css-haikei.css" type="text/css">
+  <meta charset="utf-8">
+<meta name="description" content="Ajax(エイジャックス)について、書き方など">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”author” content=”koma”>
+</head>
+
+<body>
+<h1>Ajax(エイジャックス)について<img src="../pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+<ul>
+<li class="pn"><a href="index.html"target="_blank">web制作・webライフ</a>&gt;</li>
+<li class="pn"><a href="JavaScript.html"target="_blank">javascript</a>&gt;</li>
+
+<li class="pn">Ajax</li>
+</ul>
+<P class="ch">
+  <script type="text/javascript">
+<!--
+
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日');
+// 表示終了
+
+// -->
+</script></P>
+<h2>きほん</h2>
+「Asynchronous JavaScript and XML」の略。JavaScript,jQueryを使う。
+<p class="kt fir">
+サーバとのデータのやり取りを「非同期通信」にして、ウェブページを書き換える。
+<br>
+ページ全体を読み直さずに、ページの一部分のみ書き換えることができる。
+<br>
+GoogleサジェストやGoogleマップなどに使われている。
+</p>
+
+<span class="sample">HTTPリクエストメソッド</span>　getやpostのこと。
+
+<h2>XMLHttpRequest</h2>
+非同期でクライアントとサーバーが通信して、データをやり取りする。
+<p>
+IEだと「ActiveX」になる。
+</p>
+<h3>第一段階</h3>
+要求を制作しサーバーに送信する(リクエスト)。
+<div class="cc" >
+<p class="kt">
+var x=new XMLHttpRequest();
+</p>
+new演算子を使ってオブジェクトを作成します。「x」は単なる変数名のため、なんでもよい。
+<p>
+IEの場合　
+x=new ActiveXObject("Microsoft.XMLHTTP");
+</p>
+</div>
+<div class="cc" >
+<span class="dai">openメソッド</span>
+<p class="kt">
+open("GET", "送信先URL", true);
+</p>
+<b>「第一引数」</b>getかpostなどを設定する。
+<br>
+<b>「第二引数」</b>送信先のURLを設定する。
+<br>
+上の二つは必須。
+場合によって第三引数も設定（trueかfalse）。
+同期通信は「false」を、非同期通信は「true」を指定します。
+<br>
+<span class="aaa">省略した場合は非同期通信の「true」になります。</span>
+</div>
+<div class="cc" >
+<span class="dai">
+sendメソッド</span>サーバーにデータを送信します。
+<p class="kt">
+x.send();
+</p>
+</div>
+<h3>第二段階</h3>
+<p class="kt">
+サーバーからのデータを受信(レスポンス)し、受信データを表示するなど処理する。
+</p>
+<div class="cc" >
+<span class="dai">onreadystatechangeプロパティ</span>
+readyStateプロパティの値が「読み込み完了」⁠や「⁠失敗」などの状況により実行する関数を設定する。
+<p class="kt">
+x.onreadystatechange = function() {命令文}
+</p>
+「無名関数」を使い、引数はありません。
+</div>
+<div class="cc" >
+<span class="dai">
+readyStateプロパティ</span>
+<p>
+状態を示す。データ受信が完了したかどうかを確認する。
+</p>
+<table border="2" cellpadding="5">
+<TR><th>値</th> <th> 状態 </th> </TR>
+<TR><td>0</td> <td>始まっていない </td> </TR>
+<TR><td>1</td> <td>   </td> </TR>
+<TR><td>2</td> <td> リクエスト送信中  </td> </TR>
+<TR><td>3</td> <td> <p>受信中 </td> </TR>
+<TR><td>4</td> <td>全受信完了</td>  </TR>
+</table>
+<p>
+<span class="sample">成功の場合</span>x.readyState == 4
+</p>
+</div>
+
+<div class="cc" >
+<span class="dai">
+statusプロパティ</span>
+<p>
+データ読み込み成功か，失敗か判別する。
+</p>
+<table border="2" cellpadding="5">
+<TR><th>値</th> <th> 状態 </th> </TR>
+<TR><td>200</td> <td>正常 </td> </TR>
+<TR><td>401</td> <td>   </td> </TR>
+<TR><td>403</td> <td>   </td> </TR>
+<TR><td>404</td> <td>ファイルが見つからない  </td> </TR>
+<TR><td>500</td> <td>サーバーエラー</td>  </TR>
+</table>
+<p>
+<span class="sample">成功の場合</span>x.status == 200
+</p>
+</div>
+<div class="cc" >
+<span class="dai">
+responseTextプロパティとresponseXMLプロパティ
+</span>
+<p>
+<span class="sample">responseTextプロパティ</span> <b>テキスト形式</b>でデータを取得する。
+<b>オブジェクト名.responseText</b>
+</p>
+<span class="sample">responseXMLプロパティ</span> <b>XML形式</b>でデータを取得する。
+<b>オブジェクト名.responseXML</b>
+</div>
+<p class="kt">
+if( x.readyState == 4 && x.status == 200 ) {
+  alert( x.responseText );
+}
+</p>
+<span class="sample">if( 条件式 ){ 処理 }</span> 条件式に合致していれば、{ 　 }内の処理を行う
+<p>
+<span class="sample">&&</span> 両方正しければ
+<br>
+<span class="sample">alert();</span> 表示する。
+</p>
+<h3>完成形</h3>
+<div class="cc" >
+<span class="dai">完成形1</span>
+<p>
+  <b>
+var x = new XMLHttpRequest();
+</b>
+// XMLHttpRequestのインスタンスを作成
+</p>
+<p>
+  <b>
+x.open( "GET", "送信先URL" );
+</b>
+// 送信先URLやメソッドを設定します
+</p>
+<p>
+  <b>
+x.send();
+</b>
+// リクエストをサーバに送信
+</p>
+<p>
+  <b>
+x.onreadystatechange = function() {
+  if( x.readyState == 4 && x.status == 200 ) {
+    alert( x.responseText );
+  }
+}
+</b>
+<br>
+// データ受信、読み込み時の処理を設定
+</p>
+// readyState=4は全データ受信完了。
+// status=200は正常に処理されたことを意味する。
+<br>
+// responseTextに格納された情報をalertで出力
+</div>
+<h3>外部リンク参考サイトさん</h3>
+<a href="https://www.ajaxtower.jp/ini/" target="_blank">・Ajax入門
+</a>
+　<a href="https://rfs.jp/sb/javascript/03js/ajax.html" target="_blank">・Ajax、XMLHttpRequestについて
+</a>
+<P align="center">
+  <IMG src="../pcjoshi.png"alt="楽しくpc" >
+</P>
+<a href="#top"><!aタグで,
+  戻る先を決め、アイコンを囲む>
+<IMG src="../icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+</a>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>JavaScript関数-web・アプリさくせい　気楽にチャレンジ・いろいろ確認！</title>
+  <meta charset="utf-8">
+  <meta name="description" content="JavaScript関数-種類や具体的な書き方など">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<LINK rel="stylesheet" href="../css-haikei.css" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>JavaScript関数<img src="../pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+  <nav class="fr">
+  <ul>
+    <li class="pn"><a href="../index.html"target="_blank">web制作・webライフ</a> &gt;</li>
+
+  <li class="pn"><a href="JavaScript.html"target="_blank">JavaScript</a> &gt;</li>
+  <li class="pn">JavaScript関数</li>
+  </ul>
+  </nav>
+  <P class="ch">
+    <script type="text/javascript">
+  var weeks = new Array('日','月','火','水','木','金','土');
+
+  var lastup = new Date(document.lastModified);
+
+  var year = lastup.getFullYear(); // 年
+  var month = lastup.getMonth() + 1; // 月
+  var day = lastup.getDate(); // 日
+  var week = weeks[ lastup.getDay() ]; // 曜日
+
+
+
+  // 表示開始
+  document.write('更新日時：<b>' + year + '年' + month + '月' + day + '日（' + week + '）');
+  // 表示終了
+  // -->
+  </script>
+  </P>
+  </center></header>
+
+</header>
+<h2>きほん</h2>
+<p class="kt fir">
+いろいろな処理を行う。
+<BR>
+  自分で作る関数を「ユーザー定義関数」。
+  <br>
+JavaScriptに元々ある関数を「組み込み関数」または、「ビルトイン関数」といいます。
+</p>
+<div class="cc" >
+  <span class="dai">引数</span>
+</div>
+<h2>ユーザー定義関数</h2>
+宣言した関数は、関数名()と記述することで再度使用できます。
+    <p class="kt">
+      function 関数名(引数){ 命令文}
+  </P>
+  <p class="kt fir">
+    functionを記述します。<span class="aaa">functionの後に半角スペースを入れて関数名</span>を記述。
+    <BR>
+      <span class="utn">関数名の後に括弧(　)</span>を付けます。この中には「引数」というものがはいるが、引数を使わない場合は空にする。
+      <br>
+      引数が2つ以上必要な場合もあり、その場合、「,」で区切る
+  </p>
+  <span class="aaa">{　}の中に命令文を記述。　
+    </span>。
+<h3>コールバック関数</h3>
+引数が関数になる。
+<h3>無名関数(関数リテラル)</h3>
+関数名を記述しない。関数名がなくてよい。
+<br>
+コードが見やすくなるメリットがある。
+<p class="kt">
+function(){処理}
+</p>
+<div class="cc" >
+  <span class="dai">関数式</span>
+
+関数を値にして変数へ代入している式のこと
+<p class="kt">
+var X= function() {
+ 処理}
+</p>
+</div>
+<h3>即時関数</h3>
+即時実行の無名関数
+<p class="kt">
+(function() {
+}());
+</p>
+<h2>組み込み関数（ビルトイン関数）</h2>
+<p class="kt fir">
+new演算子を使ってインスタンスを作成し、使います。
+</p>
+<div class="cc" >
+  <span class="dai">Array</span>
+（配列を扱う）Array(　)の引数に配列の要素を記述。　
+</div>
+<div class="cc">
+  <span class="dai">
+Date</span>
+（日付を扱う）
+new演算子を使ってインスタンスを作成する
+<p class="kt fir">
+var 変数名 = new Date(　);
+</p>
+パラメータ（引数）なし、
+現在の日付、時刻。
+<P>
+<span class="orj">外部リンク参考サイトさん</span>
+<a href="http://cly7796.net/wp/javascript/how-to-use-new-date/#more-3016" target="_blank">new Date( )の使い方</a>
+</P>
+</div>
+<a href="#top">
+<IMG src="../icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+</a>
+<P align="center"><IMG src="../pcjoshi.png"alt="楽しくpc" >
+</P>
+<HR color="white"ize="5"><HR color="blue">
+</body>
+</html>
