@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+
+<title>JavaScriptのプログラム</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<LINK rel="stylesheet" href="../css-haikei.css" type="text/css">
+</head>
+
+<body>
+<header class="su">
+<center>
+  <h1>JavaScriptのプログラム<img src="../pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+    </center>
+    
+    <ul class="fr">
+      <li class="pn"><a href="../index.html"target="_blank">web制作・webライフ</a> &gt;</li>
+
+    <li class="pn"><a href="JavaScript.html"target="_blank">JavaScript</a> &gt;</li>
+    <li class="pn">JavaScriptのプログラム</li>
+    </ul>
+    
+
+<P class="ch">
+  <script type="text/javascript">
+  //曜日を並べる
+var weeks = new Array('日','月','火','水','木','金','土');
+
+var lastup = new Date(document.lastModified);
+
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月、+１にする
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+// 表示開始
+document.write('更新日時：<b>' + year + '年' + month + '月' + day + '日（' + week + '）');
+
+// -->
+</script>
+</P>
+</header>
+
+
+<h3>はじめに</h3>
+更新日時、電卓、PW設定などができます
+<h3>メニュー作成</h3>
+
+
+ 
+  
+
+現在のウィンドウにリンクするには、location.href = "URL" を使う。</b>
+<br>
+<b>新しくウィンドウを開いてリンクするには、window.open( "URL" ) を使います。
+
+<div class="cc" >
+  <span class="dai">
+別ウィンドウでの表示
+</span>
+　<B>window.open('URL','ウィンドウ名','属性');</B>　属性とはウィンドウの横縦幅やスクロールバーのありなしのこと
+  <BR>
+    window.open( )で小窓という意味　htmlでは、イベント属性のonclick=""を記載。　「javascript:void(0)」（何もさせない）の意味
+    <span class="skd">外部リンク参考サイトさん</span>
+  <a href="http://www.web-jozu.com/javascript/open.html" target="_blank">別ウィンドウでの表示</a>
+  </div>
+
+<h3>PW設定</h3>
+<li>PW設定基礎　 <span class="skd">外部リンク参考サイト</span><a href="http://cya.sakura.ne.jp/java/prompt.htm" target="_blank">
+  PW設定</a>
+  <UL type="circle">
+  <li>
+    <span class="sample">prompt</span>　<b>prompt(　) は、入力ウィンドウを表示</b>します。大文字/小文字は区別されます！</li>
+  <br>
+
+　prompt(　)でインプットボックスを出します。 <b>括弧内は２つの区分があります。
+  <br>
+  最初の部分は質問文を記入し、後ろの部分は入力枠に表示する文字を指定</B>します。
+  <br>
+  今回は入力枠に何も表示する必要が無いので、空にしています。
+<br>
+   <b>文字列なのでクォーテーションで囲み、２つの区分の間は半角コンマで区切ります。</B>
+
+  <div class="cc" >
+  <b>変数 = prompt("質問文","最初に表示する文字");</b>
+    <br>カッコ内の最初の項目は質問文、2番目の項目は初期表示文字を指定します。
+  </div>
+
+  <span class="sample">if～else文</span>　条件に合っているかどうかによって、別々の処理を行う方法
+<div class="cc" >
+  <P class="kt">
+if ( 条件式 ){ 処理1 } else { 処理2 }
+</P>
+   <span class="aaa"> <b>(条件式)</b>に合致している場合、<b>{処理1}</b>を実行し、
+    条件式に合致しない場合、<b>{処理2}</b>を実行します</span>
+   </div>
+</li>
+
+<li>
+  <span class="sample">PW設定ややセキュリティアップ</span>　<b>String.fromCharCode(　) は、文字コードを文字に変換</b>。
+  <br>
+  ひとつひとつの文字には文字コードが割り付けられています。コンピュータは文字ではなく 文字コードで処理しています。
+<br>
+String関数を使い、
+String.fromCharCode(　) にして、文字コードを私たちが分かる文字へ変換します。
+</li>
+<span class="skd">外部リンク参考サイトさん</span>
+ <a href="http://cya.sakura.ne.jp/java/prompt2.htm" target="_blank">PW設定</a>
+</UL>
+
+<h3>時間的なもの</h3>
+<div class="cc" >
+  <span class="aaa">documentオブジェクトとwriteメソッドを使い</span>、
+  <br>
+　それぞれ表示したい時間帯を<b>if(時間帯) document.write("めっせーじ内容");(セミコロン)</b>で表記。
+  <br>
+  全ての部分を表示したい箇所、body内に記載。
+<DIV CLASS="gibs">
+<span class="skd">外部リンク参考サイトさん</span>
+  
+</div>
+</DIV>
+<div class="cc">
+  <span class="dai">
+更新日表示</span>
+
+documentオブジェクトとlastModifiedプロパティを(.)ドットでつなげ、引数を
+<span class="aaa">(document.lastModified)</span>とする
+<P class="kt">
+var 変数名 = new Date(document.lastModified);
+</P>
+<span class="aaa">getMonthメソッド</span>では1月が0、2月が1のように、1つずれた数字が取得されます。
+そのため、1を足して記述する。
+<P class="kt">
+getMonth() + 1
+</P>
+<span class="sample">曜日取得</span>　日～月の曜日に対応する0～6の数値を表す　getDay();
+と曜日を表す配列をつくります。
+<p class="kt">
+var 変数名 =new Array [ "日", "月", "火", "水", "木", "金", "土" ];
+</p>
+現在の日付　getDate();　西暦　getFullYear();
+<DIV CLASS="gibs">
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="http://cya.sakura.ne.jp/java/lastmdfy.htm" target="_blank">・サイトの更新日時表示</a>
+<BR>
+  　<a href="http://www.tagindex.com/javascript/time/update2.html" target="_blank">・更新日時表示　月日順</a>
+　<a href="https://www.nishishi.com/javascript-tips/now-datetime.html" target="_blank">・曜日設定</a>
+</div>
+</DIV>
+<div class="cc">
+  <span class="sample"> カウントダウン</span>
+ 　new Date(　) のところをカウントダウンしたい日にする
+</div>
+<div class="cc">
+
+  <span class="sample">javascriptでのカレンダープログラム</span>
+<br>
+var 変数 = ['日', '月', '火', '水', '木', '金', '土'];
+　曜日設定
+<BR>
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="http://cly7796.net/wp/javascript/create-a-calendar-with-javascript/#more-4448" target="_blank">
+  javascriptでのカレンダー</a>
+</div>
+</div>
+<h3>切り替えなど</h3>
+<div class="cc">
+<span class="dai">
+マウスでの画像切り替え
+</span>
+<P>
+「何もしていない最初の画像」、「マウスを乗せた時」、「マウスを離した時」
+<BR>
+の３つの画像ファイル名を<B>３つとも ＜IMG src=＞の中に記載。
+</P>
+    それぞれ=から先を”（ダブルクォーテーション）で囲む。
+    <br>
+    　onMouseOver="this.src='画像ファイル名'"　onMouseOut="this.src='画像ファイル名'"　
+    <BR>
+      　マウスオーバー、アウトの場合のみ="this.src='画像ファイル名'"</b>にする
+</div>
+    <span class="sample">
+「 scrollTo( x, y ) 」
+</span>　 body 要素を座標 ( x軸, y軸 ) にスクロールさせる。なので<b>scrollTop</b>だとトップへ戻る
+<BR>
+　<span class="skd">外部リンク参考サイトさん</span>
+<a href="http://javascriptmania.blog111.fc2.com/blog-entry-8.html" target="_blank">マウスオーバーでの画像切り替え</a>
+<h3>電卓</h3>
+簡単な電卓になります
+　<span class="skd">外部リンク参考サイトさん</span><a href="http://sound.jp/otaq/tohoho/wwwjscal.htm" target="_blank">簡単な電卓</a>　　
+
+<UL>
+  <LI>
+<UL type="circle">HTMLの書き方
+  <LI>入力欄作成（HTMLタグ)　INPUTタグに「type="text"」という属性を追加します。
+    <br>　input type="text" name=の所に計算、答えが表示。　size="入力欄の長さ"
+    <BR>
+     <span class="skd">外部リンク参考サイトさん</span><a href="http://www.dspt.net/html_tag/008_data/010.html" target="_blank">HTMLタグの書き方</a></li>
+　
+     <li>ボタン作成　input要素に type="button" を指定　　value="文字列" でボタンに表示される文字列を指定
+<BR>
+       <span class="skd">外部リンク参考サイトさん</span><a href="http://www.tagindex.com/html_tag/form/input_button.html" target="_blank">HTMLでの書き方</a>
+     </li>
+</UL>
+
+<a href="#top">
+<IMG src="../icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+</a>
+<P align="center"><IMG src="../pcjoshi.png" ></P>
+</body>
+</html>

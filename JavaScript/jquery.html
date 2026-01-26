@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>【jQuery】-web制作・webライフ　気楽にチャレンジ・いろいろ確認！</title>
+<link rel="stylesheet" type="text/css" href="../css-haikei.css" />
+
+</STYLE>
+<script type="text/javascript" src=".css-propaty-ichiran.js"></script>
+<script type="text/javascript" src="dentaku.js"></script>
+<meta charset="utf-8">
+<meta name="description" content="【jQuery】ダウンロードやCDN、セレクタ、メッソドなど具体的な書き方など">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”author” content=”koma”>
+</head>
+<BODY>
+<script src="//accaii.com/mo10hoshi/script.js" async></script><noscript><img src="//accaii.com/mo10hoshi/script?guid=on"></noscript>
+
+<header>
+<h1>jQuery<img src="../pic/shigoto2m2.png" alt="pc操作中" width="80" height="80"class="tpg"></h1>
+<ul class="fr">
+<li class="pn"><a href="../index.html"target="_blank"> web制作・webライフ</a></li> &gt;
+<li class="pn">jQueryについて</li>
+</ul>
+<P class="ch">
+  <script type="text/javascript">
+<!--
+var weeks = new Array('日','月','火','水','木','金','土');
+var lastup = new Date(document.lastModified);
+var year = lastup.getFullYear(); // 年
+var month = lastup.getMonth() + 1; // 月
+var day = lastup.getDate(); // 日
+var week = weeks[ lastup.getDay() ]; // 曜日
+
+
+
+// 表示開始
+document.write('更新日：' + year + '年' + month + '月' + day + '日');
+// 表示終了
+
+// -->
+</script>
+</p>
+</header>
+<HR color="white"ize="5"><HR color="blue">
+  <p class="kt fir">
+    JavaScriptよりも短いコードで済むこともあり、便利。
+  CDNでも配信されているので、リンクのコピペだけでも利用可。
+      </P>
+<h2>目次</h2>
+<div class="flco">
+<div class="flei">
+<a href="#cdn">
+  CDNについて
+<br>
+  <IMG src="../nai-link.gif" >
+</a>
+</div>
+<div class="flei">
+<a href="#jqk">
+  jQueryの
+<br>
+  具体的な書き方
+<br>
+  <IMG src="../nai-link.gif" >
+</a>
+</div>
+<div class="flei">
+<a href="#acrd">
+  アコーディオン
+<br>
+  の作り方
+<br>
+  <IMG src="../nai-link.gif" >
+</a>
+</div>
+</div>
+<h2>jQueryダウンロード</h2>
+&nbsp;&nbsp;<a href="https://jquery.com/" target="_blank">jQuerywebサイト<IMG src="../banako.gif" ></a>
+
+<div class="cc" >
+  <p class="kt">
+  jQueryweb公式サイトページ右上のオレンジのDownloadと書いてある所をクリック。
+</p>
+compressed=圧縮された(ファイル)＝つまり軽い。
+<p>
+<span class="aaa">jQuery 3.1.1はjQueryのバージョンです。常にアップデートされていますので最新版をダウンロードするようにしましょう。</SPAN>
+</p>
+slimバージョン　Ajaxなどのモジュールを省いてある
+</DIV>
+ <img src="pic/jqueryd-re.png" alt="jqueryダウンロード"width="60%"  height="20%">
+<p class="kt">ダウンロード後、使用するフォルダに移動しておく
+</p>
+
+
+<h3>外部リンク参考サイトさん</h3>
+<a href="http://webdesignrecipes.com/jquery-beginners-guide-for-web-design/" target="_blank">・jQueryについて</a>
+　<a href="http://schoolsidejob.com/weblanguage/jquery/" target="_blank">・jQueryについてのさいと集</a>
+　
+<a href="http://ozpa-h4.com/2012/11/07/jquery-lecture/" target="_blank">・jQueryについての説明</a>　きそ
+
+<h3>jQuery UI</h3>
+&nbsp;<a href="http://jqueryui.com/" target="_blank">jQueryUI<IMG src="../banako.gif" ></a>　ダウンロードページ</p>
+
+CDNでも利用可<br>
+<span class="aaa">jQuery UIは、jQueryを拡張するライブラリ（プラグイン）の一種</span>で、ユーザー・インターフェイス（UI）に関わる機能を提供します。
+<p class="kt">
+  ライブラリをインポートするに当たっては、jQuery→jQuery UIの順番で記述します。
+</p>
+  <span class="orj">
+  外部リンク参考サイトさん</span>
+  <a href="http://beginners-hp.com/create_jquery.html" target="_blank">jQueryUIについて</a>
+
+<h2 id="cdn">CDN</h2>
+<B>CDN（Contents Delivery Network）、コンテンツデリバリーネットワーク</B>
+  <P class="kt">
+リンクを貼るだけで利用することができます。
+Google CDN 、 Microsoft CDN、 jQuery CDNがある。
+</P>
+  <h3>google</H3>
+<p class="kt">
+Google Hosted Librariesでは、記述されてあるコードを&lt;head&gt;内にコピペ。</span>ダウンロードやアップロードしなくてもよい。
+</p>
+<span class="dai"><a href="https://developers.google.com/speed/libraries/" target="_blank">google cdn<IMG src="../banako.gif" ></a></span>
+<img src="pic/google-Libraries.png" alt="Google CDN" width="60%"height="15%">
+
+<h2>jQuery導入のしかた</h2>
+<P>
+  <span class="aaa">jQueryの個々のコードは、jQuery本体のコードの後に記入。<B>jQuery本体のコードはheadタグ内に記述し、<BR>機能させるコードはbodyタグのscriptタグで囲んだ部分に記載</B></SPAN>
+  </p>
+
+jQueryはjsファイルとして外部ファイルにまとめて記述する。HTMLファイルのheadに記述することも可能ですが通常jsファイルに記載。
+<p>
+<span class="orj">
+外部リンク参考サイトさん</span>
+<a href="http://kumaweb-d.com/jquery/basics-of-jquery/"target="_blank">jQuery書き方など2016</a>
+</p>
+<h3>　jQueryダウンロードの場合</h3>
+ダウンロードしたjQueryのファイル名とディレクトリをはじめにheadタグ内に記載
+
+<p class="kt">
+  &lt;script src="jquery-3.1.1.min.js"&gt;　&lt;/script&gt;</SPAN>　headタグ内に記述するjQuery本体のコード
+（jQuery 3.1.1バージョン）
+</p>
+<h3>　jQueryプラグイン</h3>
+<P>jQueryの機能を組み合わせて、複雑な動作を完成させたコードを
+ダウンロードするものもあれば、コードだけのものも両方ある　
+<br>
+<a href="jquery-plugin.html"target="_blank">jQueryプラグイン</a><IMG src="../nai-link.gif" >
+</p>
+
+<span class="dai">カルーセル</span>
+メリーゴーランドなど、くるくる回るものを指し、WEBデザインでは、横に自動でスクロールするスライドギャラリーの様なもの。
+<br>
+スライドショーと表現する事もある。
+<h2 id="jqk">jQueryの具体的な書き方</h2>
+<h3>基本の書き方</h3>
+
+<div class="cc" >
+  <span class="dai">最初に書くコード</span>
+  <P class="kt">
+<span class="aaa">$(function(){&nbsp;ここにコードを記載&nbsp;});</span>&nbsp;
+</P>
+  または、<B>&nbsp;<span class="aaa">$(document).ready(function(){ &nbsp;ここにコードを記載&nbsp;});</span></B>&nbsp;でもOK
+  <p>
+    <span class="aaa">$マークはjQueryを呼び出すためのjQueryを省略した記述。
+<br>
+      jQuery、$どちらで記述してもよい。$はjQueryと同じ意味。</span>
+  </p>
+
+</div>
+  <b>jQueryに限らず、ほとんどのスクリプト言語では「オブジェクト」という仕組みが必要です。</b>
+<p class="kt">
+  「オブジェクト」によって操作する対象を指定します。jQueryで利用できるオブジェクトのことをjQueryオブジェクトと呼びます。
+</p>
+<div class="gibs">
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="http://webdesignzin.hateblo.jp/entry/2016/11/17/035113"target"=_blank">・jQuery具体的な書き方2016</a>
+　<a href="http://www.jquerystudy.info/tutorial/intro/object.html"target="_blank">・jQueryセレクタ,オブジェクトについて</a>
+　<a href="http://rfs.jp/sb/javascript/jquery_abc/jquery-selector.html"target="_blank">・jQueryセレクタについて</a>
+　<a href="http://www.jquerystudy.info/tutorial/intro/method.html"target"S=_blank">・jQueryメソッドについて</a>
+</div>
+<div class="cc" >
+  <span class="dai">$("セレクタ").メソッド("引数")</span>
+  <p class="kt">
+  「セレクタ」とは<span class="utn">適用させる範囲、要素</span>。セレクタとメソッドの間のドットを忘れないように！
+</p>
+  <b>オブジェクトで（主語）を指定し、メソッドで「何をする」（述語）を指定します。（つまり主語と述語です）。
+<BR>
+  そして引数にて、より具体的に指定する「どのように」（副詞）</b>
+  <p class="kt">
+    セレクタ、引数(パラメータ)をダブルクォーテーション（“）、またはシングルクォーテーション（‘）で囲みます。
+  </p>
+</div>
+
+<div class="cc" >
+  <span class="dai">引数（ひきすう）</span>
+  <p class="kt fir">メソッドに渡す情報のことで（&nbsp;）内に設定します。メソッドにより具体的な指示をする。
+  </p>
+      引数が複数あるときはカンマ（,）で区切ります。</span>
+<p class="kt">
+      メソッドによっては引数はありません。引数(パラメータ)はあるときとないときがある！
+    </p>
+</div>
+
+<div class="cc" >
+  <span class="dai">オブジェクト . メソッド()</span>
+  <p class="kt fir">
+    メソッドはオブジェクトを操作する命令文のこと
+  </p>
+    <p class="kt fir">
+      オブジェクトとメソッドはドットを挟んで記述します</span>（「ドットシンタックス」と呼びます）。
+  </p>
+  <p class="kt">
+    オブジェクト . メソッド()&nbsp;
+    ※javaScriptの構文もドットシンタックスです。
+  </p>
+      これで<span class="aaa">「主語（オブジェクト）が何をする（メソッド）」という最小限の処理が完成します。</span>
+<P>
+  jQueryオブジェクトのメソッドは沢山あるが、すべて共通点があります。<span class="aaa">メソッドの後に( )が必要</span>！
+</p>
+</div>
+
+<P>
+  <span class="sample">イベント</span>　クリックしたときとか、マウスを乗せたとかの<b>操作</b>のこと
+<br>
+  <span class="sample">イベントハンドラ</span>　イベント後の処理のこと
+</P>
+<div class="cc" >
+<span class="dai">this</span>
+<span class="sample">
+  $(this)</span>　イベント時に要素を指定。
+
+</div>
+
+<h3>jqueryのセレクタ</h3>
+
+<p class="kt fir">
+範囲、要素を指定し、$(　 )内に記述します。
+<br>
+セレクタは「“」ダブルクォーテーション、もしくは「’」シングルクォーテーションで囲う。
+<br>
+CSSのセレクタとほぼ同じ。
+</p>
+<span class="sample">IDセレクタ</span> 　$('#ID名')
+<br>
+<span class="sample">CLASSセレクタ</span> 　$('.CLASS名')
+<div class="cc" >
+<span class="dai">子孫要素</span>
+<span class="aaa">$("先祖 子孫")</span>
+
+<br>
+<p class="kt fir">先祖と子孫の間には半角スペースが必要です。先祖と子孫、まとめてクオテーションかダブルクオーテーションで囲む。
+</p>
+html要素だけでなくクラスやID属性も設定できます。
+</div>
+<div class="gibs">
+<span class="skd">外部リンク参考サイトさん</span>
+　<a href="http://www.jquerystudy.info/tutorial/intro/object.html"target="_blank">・jQueryセレクタ,オブジェクトについて
+</a>
+<br>
+<a href="http://rfs.jp/sb/javascript/jquery_abc/jquery-selector.html"target="_blank">・jQueryセレクタについて
+</a>
+　<a href="http://www.jquerystudy.info/reference/selectors/descendant.html"target="_blank">・子孫セレクタについて</a>
+</div>
+<h3>jqueryのメソッド</h3>
+<div class="cc" >
+<span class="dai">toggle()</span>
+HTML要素を表示、非表示に切り替えできるメソッド
+</div>
+<div class="cc" >
+<span class="dai">slideDown()</span>
+HTML要素を上から下へ徐々にスライドさせながら<span class="utn">表示する</span>メソッド
+</div>
+<div class="cc" >
+<span class="dai">slideUp()</span>
+HTML要素を下から上へ徐々にスライドさせながら<span class="utn">非表示にする</span>メソッド。
+</div>
+<div class="cc" >
+<span class="dai">
+on()</span>
+<p class="kt">
+$(セレクタ).on(イベント, 関数)
+</p>
+引数にイベント名と関数を入れます。引数が複数なので、カンマ（,）で区切ります。
+</div>
+<h3>やや応用</h3>
+<div class="cc" >
+<p class="kt">
+  jQueryでの要素スタイルの追加・変更
+</p>
+css()メソッドを使用します。
+<p class="kt">
+  $('要素').css('プロパティ', '値');
+</p>
+<p class="kt">
+  $('要素').css({'プロパティ':'値', 'プロパティ':'値'});
+</p>
+<span class="orj">外部リンク参考サイトさん</span>
+<a href="http://raining.bear-life.com/jquery/css%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%A7%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9F%E8%A6%81%E7%B4%A0%E3%81%ABcss%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B" target="_blank">css()メソッド使い方</a>
+
+</div>
+
+<div class="cc" >
+  <span class="dai">メソッドチェーン</span>
+jQueryのメソッドは、メソッドチェーンといって、ドット「.」でチェーン（鎖）のようにつなげることもでき
+<br>
+JavaScriptの実行速度も早くなる　
+<br>メソッドとメソッドの間のカンマを忘れないように。
+<p class="kt">
+  $("セレクタ").メソッド('プロパティ', '値').メソッド('プロパティ', '値').メソッド('プロパティ', '値')
+</p>
+<span class="orj">外部リンク参考サイトさん</span>
+<a href="http://www.jquerystudy.info/tutorial/applied/chain.html"target="_blank">メソッドチェーンについて</a>
+</div>
+<h2 id="acrd">アコーディオン</h2>
+クリックすることで表示されたり閉じたりできるパネル。画面が小さいスマートフォンに有効
+<h3>slideToggle()</h3>
+  <p class="kt fir">
+jQueryのslideToggle()を使用する
+</p>
+<div class="cc" >
+<p class="kt">
+$(function(){
+
+    $('クリックするセレクタ').on('click', function(){
+       $('表示、非表示するセレクタ').slideToggle('速度など');
+    });
+
+});
+</p>
+クリックするセレクタと表示、非表示するセレクタを別にする。
+</div>
+<div class="cc" >
+  <span class="dai">slideToggle()</span>
+表示、非表示を行うメソッド
+  <p class="kt">
+slideToggle()の引数（パラメータ）はfast、normal、slowの３つとコールバック関数があり、引数は、あるときとないときがある。
+</p>
+<p class="kt">
+$(セレクタ).slideToggle(引数);
+</p>
+</div>
+<div class="cc" >
+  <span class="dai">on()</span>
+  クリックなので、引数のイベントにclickを使用。
+  jQueryを使うので、$(function(){  }); を記述する。
+  <p class="kt">
+  .on('click', function(){
+    $('適用セレクタ').slideToggle('速度');
+});
+</p>
+</div>
+<div class="gibs">
+<span class="skd">外部リンク参考サイトさん</span>
+<a href="https://memocarilog.info/jquery/7300"target="_blank">・jQuery、javascriptアコーディオン</a>
+　<a href="http://jquery.step-learn.com/contents/j009-slidetoggle.html"target="_blank">・slideToggle()使い方</a>
+</div>
+<h2>タブの切り替え</h2>
+<h3>HTML</h3>
+タブと中身の設定
+<p>
+ulとli
+</p>
+<h3>CSS</h3>
+display:none;で非表示にする。
+<h3>javascript</h3>
+最初の状態とクリックした状態をつくる。
+<p>
+$(function(){  });
+</p>
+<a href="#top">
+<IMG src="../icon/button.png"alt="上へボタン"width="52" height="52" class="tp">
+</a>
+<P align="center"><IMG src="../pcjoshi.png"alt="楽しくpc" >
+</P>
+
+</BODY>
+</html>
