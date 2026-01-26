@@ -47,7 +47,7 @@ document.write('更新日：' + year + '年' + month + '月' + day + '日（' + 
 </script>
 </P>
 <ul>
-<li class="pn"><a href="../index.html"target="_blank">web・アプリさくせい</a> &gt;</li>
+<li class="pn"><a href="../index.html"target="_blank">web制作・webライフ</a> &gt;</li>
 <li class="pn">CSSきほん</li>
 </ul>
 <h3>目次</h3>
@@ -78,6 +78,51 @@ document.write('更新日：' + year + '年' + month + '月' + day + '日（' + 
             <li> htmlには、それぞれ適用する要素に、<span class="aaa">cssには色や大きさなど適用する内容</span>をそれぞれ記述します。</li>
             <li>HTMLファイルとは別に作成し、ファイル名は「～.css」として保存します。
         </ul>
+       
+ <span class="dai">ベンダープレフィックス</span>
+            <p class="kt">
+                Internet ExplorerやGoogle Chrome、Safariなど、それぞれのブラウザ独自のベンダープレフィックスがあります。
+            </p>
+            <p class="kt">
+                主にCSS3の動作・装飾を使いたいときに必要となる。
+                <br>
+                最近はベンダープレフィックスを必要とするプロパティも少なくなってきている。
+            </p>
+           
+          
+            <img src="../pic/vendorprefix.png" alt="確認サイト"  width="670" height="400">
+            <p class="kt">
+                CSSプロパティの頭（プレフィックス）に、それぞれのブラウザを表す文字列を追記する。
+                <br>
+                <span class="aaa">
+                    必ず最後にベンダープレフィックスがつかないプロパティを書く</span>
+            </p>
+
+            <table border="2" cellpadding="7">
+                <caption><b>ブラウザごと</b></caption>
+                <tr>
+                    <td>InternetExplor</td>
+                    <td>-ms-</td>
+                </tr>
+                <tr>
+                    <td>Google Chrome,Safari</td>
+                    <td> -webkit-</td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                    <td>-moz-</td>
+                </tr>
+                <tr>
+                    <td>Opera</td>
+                    <td>-o-</td>
+                </tr>
+            </table>
+            <p class="kt">
+                InternetExplorはマイクロソフトの「ms」、
+                <br>
+                Firefoxは開発元のMozillaから「moz」、Operaは「o」を使っている。
+            </p>
+            <a href="https://caniuse.com/" target="_blank">ベンダープレフィックスの必要性の確認サイトへ</a>
        
 
             <span class="dai">
